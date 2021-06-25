@@ -1,0 +1,172 @@
+@mixin transition($what, $time:.65s, $type:ease){
+    transition: $what $type $time;
+}
+
+@mixin breakpoint($class) {
+    @if $class == xs {
+        @media (max-width: 480px) { @content; }
+    }
+
+    @else if $class == sm {
+        @media (min-width: 481px) { @content; }
+    }
+
+    @else if $class == md {
+        @media (min-width: 768px) { @content; }
+    }
+
+    @else if $class == lg {
+        @media (min-width: 1024px) { @content; }
+    }
+
+    @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+//Perfect 4th type scale https://type-scale.com/
+
+@mixin xl-font-size{
+    font-size:4.209rem; 
+    line-height:5rem;
+}
+
+@mixin l-font-size{
+    font-size:3.157rem;
+    line-height:4rem;
+}
+
+@mixin md-font-size{
+    font-size:2.369rem;
+    line-height:3rem;
+}
+
+@mixin sm-font-size{
+    font-size:1.777rem;
+    line-height:2.5rem;
+}
+
+@mixin xs-font-size{
+    font-size:1.333rem;
+    line-height:1.5rem;
+}
+
+@mixin body-font-size{
+    font-size:1rem;
+    line-height:1.5rem;
+}
+
+@mixin small-font-size{
+    font-size:.825rem;
+    line-height:1rem;
+}
+
+@mixin tiny-font-size{
+    font-size:.75rem;
+    line-height:1rem;
+}
+
+@mixin heading-xl{
+    @include md-font-size();
+    @include breakpoint(md){
+        @include l-font-size();
+    }
+    @include breakpoint(lg){
+        @include xl-font-size();
+    }
+}
+
+@mixin heading-lg{
+    @include sm-font-size();
+    @include breakpoint(md){
+        @include md-font-size();
+    }
+    @include breakpoint(lg){
+        @include l-font-size();
+    }
+}
+
+@mixin heading-md{
+    @include xs-font-size();
+    @include breakpoint(md){
+        @include sm-font-size();
+    }
+    @include breakpoint(lg){
+        @include md-font-size();
+    }
+}
+
+@mixin heading-sm{
+    @include xs-font-size();
+    @include breakpoint(md){
+        @include sm-font-size();
+    }
+}
+
+@mixin heading-xs{
+    @include body-font-size();
+    @include breakpoint(md){
+        @include xs-font-size();
+    }
+}
+
+@mixin body-text{
+    @include small-font-size();
+    @include breakpoint(sm){
+        @include body-font-size();
+    }
+}
+
+@mixin btn{
+    background:$red;
+    color:$white;
+    padding:$space-small $space-medium;
+    font-family: $primary-font;
+    font-weight:300;
+    @include xs-font-size();
+    @include breakpoint(lg){
+        @include sm-font-size();
+    }
+    @include transition(background-color);
+    @include breakpoint(lg){
+        padding:$space-small $space-large;
+    }
+    &:hover{
+        background:$blue;
+        color:$white;
+    }
+}
+
+@mixin half-layout{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    & > *{
+        width:100%;
+        text-align:center;
+    }
+    @include breakpoint(md){
+        & > *{
+            width:calc(50% - 1em);
+            text-align: left;
+        }
+    }
+}
+
+@mixin grid(){
+    display:grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    & > *{
+        width:100%;
+        text-align:center;
+    }
+    @include breakpoint(md){
+        & > *{
+            width:calc(50% - 1em);
+            text-align: left;
+        }
+    }
+}

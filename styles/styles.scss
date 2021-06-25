@@ -1,0 +1,391 @@
+@import 'variables';
+@import 'mixins';
+@import 'keyframes';
+
+body{
+    font-family: $secondary-font;
+    font-weight:300;
+    @include body-text;
+    color:$text-color;
+}
+
+strong{
+    font-weight:500;
+}
+
+a{
+    font-weight:500;
+    text-decoration: none;
+    color:$red;
+    @include transition(color);
+    &:hover{
+        color:$blue;
+    }
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family:$primary-font;
+    font-weight:300;
+    strong{
+        font-weight:500;
+    }
+}
+
+h1{
+    @include heading-xl;
+}
+
+h2{
+    @include heading-lg;
+}
+
+h3{
+    @include heading-md;
+}
+
+h4{
+    @include heading-sm;
+}
+
+svg,
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width:1600px;
+    margin:0 auto;
+    padding:$space-large;
+    @include breakpoint(md){
+        padding:$space-xxlarge $space-large;
+    }
+    h1:first-of-type{
+        font-weight:500;
+    }
+}
+
+.btn{
+    @include btn;
+}
+
+/*HEADER*/
+header{
+    border-bottom:$blue-border-bottom; 
+    .container{
+        display:flex;
+        align-items:center;
+        padding:$space-small $space-large;
+        // @include breakpoint(md){
+        //     padding:$space-medium $space-large;
+        // }
+    }
+    #logo{
+        width:30%;
+        @include breakpoint(sm){
+            width:12%;
+        }
+        svg{
+            fill:$red;
+            @include transition(fill);
+            &:hover{
+                fill:$blue;
+            }
+        }
+    }
+    nav{
+        margin-left:auto;
+        display:flex;
+        justify-content: space-between;
+        a{
+            @include heading-xs;
+            font-family:$primary-font;
+            text-transform: lowercase;
+            + a{
+                margin-left:$space-large;
+            }
+        }
+    }
+    /*MOBILE NAV*/
+
+}
+
+
+/*HERO*/
+section.hero{
+    border-bottom:$blue-border-bottom;         
+    .container{
+        @include half-layout;
+        @include breakpoint(md){
+            & > *:first-child{
+                text-align: center;
+            }
+        }
+    }
+    h2{
+        @include heading-md;
+    }
+    p{
+        @include heading-lg;
+        font-family: $primary-font;
+    }
+    .buttons{
+        margin-top:$space-medium;
+        display:flex;
+        justify-content: center;
+        * + *{
+            margin-left:$space-medium;
+        }
+        @include breakpoint(md){
+            justify-content: flex-start;
+        }
+    }
+    .image{
+        display:none;
+        text-align: center;
+        @include breakpoint(md){
+            display:block;
+        }
+        
+    }
+}
+
+/*HOMEPAGE*/    
+section.skills,
+section.work{
+    .container > h1{
+        text-align:center;
+        @include heading-lg;
+        @include breakpoint(md){
+            padding-bottom:$space-large;
+        }
+    }
+}
+
+section.skills{
+    background:$blue;
+    color:$white;
+    h2{
+        @include heading-md;
+        padding-bottom:$space-small;
+        text-align: center;
+    }
+    .container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        gap: $space-xlarge;
+        transition:all .5s ease;
+    }
+    .skill{
+        display:block;
+        text-align: center;
+        transition:all .5s ease;
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .5em;
+        }
+        .fas{
+            // display: none;
+            transition:transform 0.5s ease;
+        }
+        // .toggle-content{
+        //     display:none;
+        // }
+    
+        &.animate__animated.animate__fadeInDown{
+            &:nth-of-type(2){
+                animation-delay: .5s;
+            }
+            &:nth-of-type(3){
+                animation-delay: 1s;
+            }
+        }
+        &.open{
+            .fas{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    // @include breakpoint(sm){
+    //     .skill{
+    //         display:grid;
+    //         grid-template-columns:1fr 3fr;
+    //         grid-template-rows:auto;
+    //         gap: $space-xlarge;
+    //     }
+    // }
+    @include breakpoint(sm){
+        .container{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto;
+            h1{
+                grid-area: 1 / 1 / 1 / 4;
+            }
+        }
+        .skill{
+            display:block;
+        }
+        .btn{
+            display:none;
+        }
+    }
+    // @include breakpoint(md){
+    //     .skill{
+    //         .fas{
+    //             display: block;
+    //         }
+    //         .toggle-content{
+    //             text-align:left;
+    //         }
+    //     }
+    // }
+    
+    
+
+}
+
+section.work{
+    border-bottom: $blue-border-bottom;
+    article{
+        @include half-layout;
+        margin-top:$space-xlarge;
+        padding-bottom:$space-xlarge;
+        h1{
+            @include heading-lg;
+        }
+        img{
+            border:1px solid $text-color;
+            cursor:pointer;
+            transition:transform .5s ease, box-shadow .5s ease;
+            &:hover{
+                transform: scale(1.02);
+                // box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+                // -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+                // -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+            }
+        }
+        .tags{
+            font-weight:500;
+        }
+        .content{
+            * + *{
+                margin-top:$space-large;
+            }
+            padding-top:$space-medium;
+            margin-bottom:$space-medium;
+            @include breakpoint(md){
+                padding-top:0;
+            }
+        }
+        @include breakpoint(md){
+            &:nth-of-type(2n){
+                & > *:first-child{
+                    order:1;
+                }
+            }
+        }
+    }
+}
+
+/*FOOTER*/
+footer{
+    background-image:none;
+    @include breakpoint(sm){
+        display:grid;
+        grid-template-columns: 25% 1fr 25%;
+        .bg-image{
+            display:block;
+            background-size:auto 100%;
+            background-repeat:no-repeat;
+        }
+        > div:first-of-type{
+            background-image:url(../images/wiggle-left-bottom.png);
+            background-position:right bottom;
+        }
+        > div:last-of-type{
+            background-image:url(../images/wiggle-right-bottom.png);
+            background-position:left bottom;
+        }
+    }
+    
+    
+    @include breakpoint(lg){
+        // .bg-image{
+        //     display:none;
+        // }
+        // display:block;
+        // background-image: url(../images/wiggle-left-bottom.png), url(../images/wiggle-right-bottom.png);
+        // background-position: left bottom, right bottom;
+        // background-repeat: no-repeat, no-repeat;
+        // background-size:contain;
+    }
+    .container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align: center;
+        > * + *{
+            margin-top:$space-large;
+        }
+    }
+    h1{
+        @include heading-lg;
+    }
+    h2{
+        @include heading-md;
+    }
+    ul{
+        display:flex;
+        li{
+          @include heading-sm;
+          font-family: $primary-font;  
+          + li{
+              margin-left:$space-large;
+          }
+        }
+    }
+}
+
+/*CASE STUDY*/
+.gridImageArea{
+    display:grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+    "photo photo"
+    "photo mockup";
+
+  .photo {
+    grid-area: photo;
+    background-image: url("../images/safetrips/cover-photo.jpg");
+  }
+  
+  .mockup {
+    grid-area: mockup;
+    background-image: url("../images/safetrips/mobile-airline-info.png");
+  }
+
+  .gridImage{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        position: relative;
+  }
+}
+
+.toggle{
+    cursor:pointer;
+}
+
+.toggle-content{
+    display:none;
+}
