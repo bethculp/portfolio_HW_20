@@ -274,12 +274,12 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Iterations from Testing</h2>
+                        <h2>Design Iterations After Testing</h2>
                     </div>
                 </div>
                 <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
                     <div class="col-md-6">
-                        <h2>Individual travel service page</h2>
+                        <h2>Individual travel service details</h2>
                         <h3>Feedback:</h3>
                         <ul class="list">
                             <li>Individual airline page is confusing, users unsure how to find flights</li>
@@ -326,7 +326,29 @@
                             <li>Removed arrow and replaced with highlighted state on clickable menu</li>
                         </ul>
                     </div>
-                    
+                </div>
+                <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
+                    <div class="col-md-6">
+                        <h2>Travel options</h2>
+                        <h3>Feedback:</h3>
+                        <ul class="list">
+                            <li>Users not sure if they are in the right place as trip details aren’t shown</li>
+                            <li>"Safest" and "fastest" tags not noticable</li>
+                        </ul>
+
+                        <h3>Modifications:</h3>
+                        <ul class="list">
+                            <li>Added the user’s trip details under heading to indicate these results are for their trip</li>
+                            <li>Changed highlight color to orange for better contrast</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="images">
+                            <img src="images/mid-fidelity/iteration3_1.png" alt="">
+                            <img src="images/mid-fidelity/iteration3_2.png" alt="">
+                        </div>
+                        <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
+                    </div>
                 </div>
             </div>
         </section>
