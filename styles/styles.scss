@@ -4,17 +4,17 @@
 
 body{
     font-family: $secondary-font;
-    font-weight:300;
+    font-weight:$font-normal;
     @include body-text;
     color:$text-color;
 }
 
 strong{
-    font-weight:500;
+    font-weight:$font-bold;
 }
 
 a{
-    font-weight:500;
+    font-weight:$font-bold;
     text-decoration: none;
     color:$red;
     @include transition(color);
@@ -28,9 +28,10 @@ h2,
 h3,
 h4{
     font-family:$primary-font;
-    font-weight:300;
+    font-weight:$font-normal;
+    margin-bottom:0;
     strong{
-        font-weight:500;
+        font-weight:$font-bold;
     }
 }
 
@@ -55,20 +56,69 @@ img{
     max-width: 100%;
 }
 
-.container{
-    max-width:1600px;
-    margin:0 auto;
-    padding:$space-large;
-    @include breakpoint(md){
-        padding:$space-xxlarge $space-large;
+ol,
+ul{
+    padding-left:0;
+    margin:0;
+}
+
+ul.list{
+    padding-left:1rem;
+    list-style-type: disc;
+    li{
+        margin:$space-xs 0;
     }
-    h1:first-of-type{
-        font-weight:500;
+}
+
+ul, p{
+    margin-bottom:0;
+    + p,
+    + ul{
+        margin-top:$space-md;
     }
+}
+
+figcaption{
+    @include small-font-size;
+    padding-top:$space-sm;
+}
+
+.quote{
+    @include xs-font-size;
+    font-family:$primary-font;
 }
 
 .btn{
     @include btn;
+}
+
+.blue{
+    background:$blue    ;
+    color:$white;
+}
+
+.blue-light{
+    background:$blue-light;
+}
+
+.toggle{
+    cursor:pointer;
+}
+
+.toggle-content{
+    display:none;
+}
+
+.container{
+    max-width:$width-xxl;
+    margin:0 auto;
+    padding:$space-xl;
+    @include breakpoint(md){
+        padding:$space-xxl $space-xl;
+    }
+    h1:first-of-type{
+        font-weight:$font-bold;
+    }
 }
 
 /*HEADER*/
@@ -77,10 +127,7 @@ header{
     .container{
         display:flex;
         align-items:center;
-        padding:$space-small $space-large;
-        // @include breakpoint(md){
-        //     padding:$space-medium $space-large;
-        // }
+        padding:$space-sm $space-lg;
     }
     #logo{
         width:30%;
@@ -104,7 +151,7 @@ header{
             font-family:$primary-font;
             text-transform: lowercase;
             + a{
-                margin-left:$space-large;
+                margin-left:$space-lg;
             }
         }
     }
@@ -117,7 +164,7 @@ header{
 section.hero{
     border-bottom:$blue-border-bottom;         
     .container{
-        @include half-layout;
+        @include layout(50%);
         @include breakpoint(md){
             & > *:first-child{
                 text-align: center;
@@ -127,16 +174,22 @@ section.hero{
     h2{
         @include heading-md;
     }
+    h3{
+        @include heading-sm;
+    }
     p{
         @include heading-lg;
         font-family: $primary-font;
     }
+    ul li{
+        margin-bottom:$space-md;
+    }
     .buttons{
-        margin-top:$space-medium;
+        margin-top:$space-md;
         display:flex;
         justify-content: center;
         * + *{
-            margin-left:$space-medium;
+            margin-left:$space-md;
         }
         @include breakpoint(md){
             justify-content: flex-start;
@@ -147,7 +200,7 @@ section.hero{
         text-align: center;
         @include breakpoint(md){
             display:block;
-        }
+        } 
         
     }
 }
@@ -159,24 +212,23 @@ section.work{
         text-align:center;
         @include heading-lg;
         @include breakpoint(md){
-            padding-bottom:$space-large;
+            padding-bottom:$space-lg;
         }
     }
 }
 
 section.skills{
-    background:$blue;
-    color:$white;
     h2{
         @include heading-md;
-        padding-bottom:$space-small;
+        padding-bottom:$space-sm;
         text-align: center;
     }
     .container{
+        max-width:$width-xl;
         display:grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(4, auto);
-        gap: $space-xlarge;
+        gap: $space-xl;
         transition:all .5s ease;
     }
     .skill{
@@ -252,9 +304,9 @@ section.skills{
 section.work{
     border-bottom: $blue-border-bottom;
     article{
-        @include half-layout;
-        margin-top:$space-xlarge;
-        padding-bottom:$space-xlarge;
+        @include layout(50%);
+        margin-top:$space-xl;
+        padding-bottom:$space-xl;
         h1{
             @include heading-lg;
         }
@@ -270,14 +322,14 @@ section.work{
             }
         }
         .tags{
-            font-weight:500;
+            font-weight:$font-bold;
         }
         .content{
             * + *{
-                margin-top:$space-large;
+                margin-top:$space-lg;
             }
-            padding-top:$space-medium;
-            margin-bottom:$space-medium;
+            padding-top:$space-md;
+            margin-bottom:$space-md;
             @include breakpoint(md){
                 padding-top:0;
             }
@@ -330,7 +382,7 @@ footer{
         align-items:center;
         text-align: center;
         > * + *{
-            margin-top:$space-large;
+            margin-top:$space-lg;
         }
     }
     h1{
@@ -345,47 +397,170 @@ footer{
           @include heading-sm;
           font-family: $primary-font;  
           + li{
-              margin-left:$space-large;
+              margin-left:$space-lg;
           }
         }
     }
 }
 
 /*CASE STUDY*/
-.gridImageArea{
-    display:grid;
-    min-height: 500px;
-    height: 70vh;
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
-    grid-template-areas:
-    "photo photo"
-    "photo mockup";
+// .gridImageArea{
+//     display:grid;
+//     min-height: 500px;
+//     height: 70vh;
+//     grid-template-rows: 75% 25%;
+//     grid-template-columns: 75% 25%;
+//     grid-template-areas:
+//     "photo photo"
+//     "photo mockup";
 
-  .photo {
-    grid-area: photo;
-    background-image: url("../images/safetrips/cover-photo.jpg");
-  }
+//   .photo {
+//     grid-area: photo;
+//     background-image: url("../images/safetrips/cover-photo.jpg");
+//   }
   
-  .mockup {
-    grid-area: mockup;
-    background-image: url("../images/safetrips/mobile-airline-info.png");
-  }
+//   .mockup {
+//     grid-area: mockup;
+//     background-image: url("../images/safetrips/mobile-airline-info.png");
+//   }
 
-  .gridImage{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+//   .gridImage{
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         align-items: center;
+//         display: flex;
+//         position: relative;
+//   }
+// }
+
+section.hero.case-study{
+    h1{
+        font-weight:600;
+    }
+    ul.details{
+        &:before{
+            content:"";
+            display:block;
+            height:4px;
+            width:$space-xxl;
+            background-color:$blue;
+            margin:$space-lg 0;
+        }
+        li{
+            h3{
+                font-weight:$font-bold;
+                @include heading-xs;
+            }
+        }
+    }
+}
+
+section{
+    h1, h2, h3, p{
+        + h2,
+        + h3{
+            margin-top:$space-md;
+        }
+    }
+    .row + .row{
+        margin-top:$space-xl;
+    }
+}
+
+.case-study-nav{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:$space-md;
+    a{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        @include sm-font-size;
+        img{
+            margin-bottom:$space-sm;
+        }
+    }
+}
+
+.process-title{
+    text-align: center;
+    .container{
+        padding-top:$space-lg;
+        padding-bottom:$space-lg;
+    }
+    + .container{
+        padding-top:$space-xl;
+    }
+}
+
+section.process{
+    h2{
+        @include heading-md;
+        font-weight:$font-bold;
+    }
+    h3{
+        @include heading-sm;
+    }
+    img{
+        border:1px solid $black;
+    }
+}
+
+.key-findings {
+    ul {
+        padding-left: 2rem;
+        li{
+        @include heading-sm;
+        font-family: $primary-font;
+        }
+    }
+}
+
+.quotes{
+    margin:$space-xl 0;
+    text-align:center;
+    @include layout(33.33%);
+    .quote{
+        padding:$space-lg;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
         align-items: center;
-        display: flex;
-        position: relative;
-  }
+        text-align: center;
+    }
+    .fas{
+        color:$blue;
+        padding-bottom:$space-md;
+        font-size:2em;
+    }
 }
 
-.toggle{
-    cursor:pointer;
+.padding-lg{
+    padding:$space-lg;
 }
 
-.toggle-content{
-    display:none;
+.proto-images{
+    .images{
+        @include layout(16.66%);
+    }
 }
+
+.iteration{
+    .images{
+        @include layout(50%);
+        
+    }
+    section.process & img{
+        border:0;
+    }
+}
+
+.col-md-12{
+    > h2{
+        text-align:center;
+        padding-bottom:$space-md;
+    }
+}
+

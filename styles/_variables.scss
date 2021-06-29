@@ -1,16 +1,29 @@
 $red: #CC483E;
 $blue: #0177BF;
+$blue-light: #DCEEF8;
 $white: #fff;
-$text-color: #410F10;
+$black: #000;
+$gray: #eee;
+$text-color: #1a1a1a;
 
 $primary-font: 'Oswald', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 
-$space-xxlarge:4rem;
-$space-xlarge:2rem;
-$space-large:1.5rem;
-$space-medium:1rem;
-$space-small:.5rem;
-$space-tiny:.25rem;
+$font-normal: 300;
+$font-bold: 500;
 
-$blue-border-bottom:$space-tiny solid $blue;
+$space-xxl:6rem;
+$space-xl:3rem;
+$space-lg:1.5rem;
+$space-md:1rem;
+$space-sm:.5rem;
+$space-xs:.25rem;
+
+
+$width-sm: 576px;
+$width-md: 768px;
+$width-lg: 992px;
+$width-xl: 1200px;
+$width-xxl: 1400px;
+
+$blue-border-bottom:$space-xs solid $blue;

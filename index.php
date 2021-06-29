@@ -3,9 +3,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="styles/reset.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/bc11ea228d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
     <title>Beth Culp</title>
@@ -16,7 +16,7 @@
         
         <section class="hero">
             <div class="container">
-                <div class="image wow animate__animated animate__rotateInDownLeft animate__fadeIn">
+                <div class="image wow animate__animated animate__rotateInDownLeft animate__fadeIn ">
                     <img class="" src="images/wiggles.png">
                 </div>
                 <div class="content animate__animated animate__fadeInRight">
@@ -24,44 +24,38 @@
                     <h1>UX/UI Designer</h1>
                     <h2>with over 10 years of experience producing accessible, creative and ethical solutions</h2>
                     <div class="buttons">
-                        <a href="/about" class="btn">About Me</a>
+                        <a href="/about" class="btn" aria-label="Learn more about Beth Culp">Learn more</a>
                         <!-- <a href="/resume" class="btn">Resume</a> -->
                     </div>
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills blue">
             <div class="container">
                 <h1>Areas of Expertise</h1>
                 <div class="skill wow animate__animated animate__fadeInDown">
-                    <div class="toggle">
+                    
                         <img src="images/icon-ux.png" alt="Sitemap icon">
                         <div class="heading">
                             <h2>UX Design</h2>
-                            <i class="fas fa-caret-down"></i>
+                            
                         </div>
-                    </div>
-                    <p class="toggle-content">I have many years of experience creating information architecture and user flows, from globally relevant philanthropic data landscapes, to the online contest registration process for the annual county fair. Whether a big or small project, I am very focused on the holistic experience of the entire application, and finding an answer to every “What if?” scenario while also working within product goals and requirements.</p>
+                    
+                    <!-- <p class="toggle-content">I have many years of experience creating information architecture and user flows, from globally relevant philanthropic data landscapes, to the online contest registration process for the annual county fair. Whether a big or small project, I am very focused on the holistic experience of the entire application, and finding an answer to every “What if?” scenario while also working within product goals and requirements.</p> -->
                 </div>
                 <div class="skill wow animate__animated animate__fadeInDown">
-                    <div class="toggle">
                         <img src="images/icon-ui.png" alt="Designer pen icon">
                         <div class="heading">
                             <h2 >UI Design</h2>
-                            <i class="fas fa-caret-down"></i>
                         </div>
-                    </div>
-                    <p class="toggle-content">Over my career as lead designer at a digital agency, as well as UX designer at a nonprofit that maintained multiple digital properties, I’ve become a specialist in creating brand identity,  and designing digital interfaces, including: websites for global fundraising causes, data visualization dashboards, multi-tier prospecting applications, and more.  From sketches, to wireframes, to design, I create delightful and beautiful digital experiences using Figma and the Adobe Creative Suite.</p>                
+                    <!-- <p class="toggle-content">Over my career as lead designer at a digital agency, as well as UX designer at a nonprofit that maintained multiple digital properties, I’ve become a specialist in creating brand identity,  and designing digital interfaces, including: websites for global fundraising causes, data visualization dashboards, multi-tier prospecting applications, and more.  From sketches, to wireframes, to design, I create delightful and beautiful digital experiences using Figma and the Adobe Creative Suite.</p>                 -->
                 </div>
                 <div class="skill wow animate__animated animate__fadeInDown">
-                    <div class="toggle">
                         <img src="images/icon-code.png" alt="Website coding icon">
                         <div class="heading">
                             <h2>Front-end Development</h2>
-                            <i class="fas fa-caret-down"></i>
                         </div>
-                    </div>
-                    <p class="toggle-content">To me, writing responsive HTML and CSS has always come hand-in-hand with creating designs. I enjoy the logical thinking of CSS, and think SCSS is just plain fun. I have extensive experience in Wordpress, including contributing to and maintaining a custom parent theme that supported more than 30 child websites. Comfortable with PHP and Javascript, I am able to jump into many different systems and environments seamlessly, with a focus on accessibility in all aspects of the process.</p>                
+                    <!-- <p class="toggle-content">To me, writing responsive HTML and CSS has always come hand-in-hand with creating designs. I enjoy the logical thinking of CSS, and think SCSS is just plain fun. I have extensive experience in Wordpress, including contributing to and maintaining a custom parent theme that supported more than 30 child websites. Comfortable with PHP and Javascript, I am able to jump into many different systems and environments seamlessly, with a focus on accessibility in all aspects of the process.</p>                 -->
                 </div>
                 <!-- <a href="/about" class="btn" aria-label="Learn more about my skills">Learn More</a> -->
             </div>
@@ -139,9 +133,11 @@
     </main>
     <?php include('inc/footer.php');?>
 </body>
-<script src="js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-<script src="js/index.js"></script>
+<!--SCRIPTS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/index.js"></script>
 </html>

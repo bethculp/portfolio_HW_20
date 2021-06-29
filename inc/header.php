@@ -11,6 +11,15 @@
             </div>
             <nav>
                 <a href="../work">Work</a>
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Case studies
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="/safetrips">SafeTrips Mobile Prototype</a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
                 <a href="../about">About</a>
                 <a href="../resume">Resume</a>
                 <a href="../contact">Contact</a>
