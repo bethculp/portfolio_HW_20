@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="content animate__animated animate__fadeInRight">
-                            <h1>SafeTrips</h1>
+                            <h1>SafeTrips TEST!</h1>
                             <h2>A mobile app providing travelers with peer-reviewed safety information in an uncertain world.</h2>
                             <ul class="details">
                                 <li>
