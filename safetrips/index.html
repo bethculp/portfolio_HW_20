@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/bc11ea228d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+    <title>SafeTrips Mobile Prototype | Beth Culp</title>
+</head>
+<body>
+        <header>
+        <div class="container">
+            <div id="logo">
+                <a href="/">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 845.01 520.4" aria-labelledby="logoTitle logoDesc" role="img">
+                        <title id="logoTitle">Beth Culp</title>
+                        <desc id="logoDesc">Logo for UX/UI Designer Beth Culp</desc>
+                        <path class="cls-1" d="M672.45,133.16"/><path class="cls-1" d="M614.82,150"/><path class="cls-1" d="M675.05,439.18"/><path class="cls-1" d="M570,475.23"/><path class="cls-2" d="M398.13,474.37A62.28,62.28,0,0,1,380.6,489.1a50.66,50.66,0,0,1-21.35,6.43,46.22,46.22,0,0,1-21.36-3.28,49.83,49.83,0,0,1-17.42-12,57.23,57.23,0,0,1-11.75-18.88,66.6,66.6,0,0,1-4.31-24.29A72.83,72.83,0,0,1,308.64,412a71.16,71.16,0,0,1,11.66-20.94,62.83,62.83,0,0,1,17.38-14.88,49.35,49.35,0,0,1,21.35-6.6,46.35,46.35,0,0,1,21.36,3.28A50.8,50.8,0,0,1,398,385a53.55,53.55,0,0,1,4.15,5l27.38-10.24a77.6,77.6,0,0,0-10.2-13,73.66,73.66,0,0,0-26.45-17.15A77.44,77.44,0,0,0,359,345a83.11,83.11,0,0,0-33.68,9.61,90.31,90.31,0,0,0-26.22,21,97.56,97.56,0,0,0-17,29.1,95.52,95.52,0,0,0-6.1,34.13,89.73,89.73,0,0,0,6.07,32.9,78.2,78.2,0,0,0,17,26.59,73.57,73.57,0,0,0,26.29,17.17q15.36,6,34,4.61a83.92,83.92,0,0,0,34-9.63,92.26,92.26,0,0,0,43.42-50.16,97.51,97.51,0,0,0,3.75-13l-33.13,12.38A67.4,67.4,0,0,1,398.13,474.37Z"/><polygon class="cls-2" points="630.97 175.02 630.97 446.15 658.54 437.78 658.54 167.06 658.16 167.06 630.97 175.02"/><path class="cls-2" d="M838.94,276a78.37,78.37,0,0,0-17-26.59,73.68,73.68,0,0,0-26.29-17.16q-15.36-6-34-4.62a83.93,83.93,0,0,0-34,9.64,98.74,98.74,0,0,0-8.88,5.43c0-2,0-4.06,0-6.08l-27.62,8.23v.48l-.18.05V516.48l27.57-8.37V393.67a78.31,78.31,0,0,0,9.57,4.45A77.22,77.22,0,0,0,762,402.74a82.91,82.91,0,0,0,33.68-9.61,90.35,90.35,0,0,0,26.23-21,97.2,97.2,0,0,0,17-29.1A95.75,95.75,0,0,0,845,308.86,90,90,0,0,0,838.94,276Zm-26.63,59.77a70.91,70.91,0,0,1-11.67,20.93,62.72,62.72,0,0,1-17.38,14.89,49.43,49.43,0,0,1-21.34,6.59,46.27,46.27,0,0,1-21.37-3.28A50.89,50.89,0,0,1,723,362.72a54.58,54.58,0,0,1-3.84-4.57c-.09-20.28-.18-49.09-.26-79.45a64.28,64.28,0,0,1,3.94-5.33,62.19,62.19,0,0,1,17.54-14.74,50.61,50.61,0,0,1,21.34-6.43,46.2,46.2,0,0,1,21.36,3.28,50,50,0,0,1,17.43,12,57.31,57.31,0,0,1,11.74,18.88,66.85,66.85,0,0,1,4.32,24.29A73.4,73.4,0,0,1,812.31,335.73Z"/><path class="cls-2" d="M131,245a73.68,73.68,0,0,0-26.29-17.16q-15.36-6-34-4.61a83.92,83.92,0,0,0-34,9.63,95.25,95.25,0,0,0-8.88,5.44c-.12-45.3-.21-88-.24-105.14L0,141.26l.37,222,.11.09h0a80.13,80.13,0,0,0,10.2,13.31,73.66,73.66,0,0,0,26.45,17.15A77.44,77.44,0,0,0,71,398.41a83.11,83.11,0,0,0,33.68-9.61,90.31,90.31,0,0,0,26.22-21,97.56,97.56,0,0,0,17-29.1,95.52,95.52,0,0,0,6.1-34.13,89.73,89.73,0,0,0-6.07-32.9A78.34,78.34,0,0,0,131,245Zm-9.66,86.36a71.16,71.16,0,0,1-11.66,20.94,62.83,62.83,0,0,1-17.38,14.88,49.35,49.35,0,0,1-21.35,6.6,46.35,46.35,0,0,1-21.36-3.28A50.8,50.8,0,0,1,32,358.39a54.27,54.27,0,0,1-3.84-4.57c-.09-20.29-.18-49.09-.27-79.45,1.24-1.84,2.54-3.64,3.95-5.34A62.28,62.28,0,0,1,49.37,254.3a50.66,50.66,0,0,1,21.35-6.43,46.22,46.22,0,0,1,21.36,3.28,49.83,49.83,0,0,1,17.42,12A57.23,57.23,0,0,1,121.25,282a66.6,66.6,0,0,1,4.31,24.29A72.83,72.83,0,0,1,121.33,331.39Z"/><path class="cls-2" d="M286,302a62.46,62.46,0,0,1-17.54,14.73,50.66,50.66,0,0,1-21.34,6.43,46.25,46.25,0,0,1-21.37-3.28,50,50,0,0,1-17.42-12A57.31,57.31,0,0,1,196.63,289a65.67,65.67,0,0,1-4.26-21.9L324,228.23a5.07,5.07,0,0,0,0-.66c-.44-4.53-5-15.71-7.52-20.25-3.44-6.09-6.36-9-10.21-13a69.48,69.48,0,0,0-25.45-17.15,77.29,77.29,0,0,0-33.87-4.62,83.11,83.11,0,0,0-33.68,9.61,90.31,90.31,0,0,0-26.22,21,97.2,97.2,0,0,0-17,29.1,95.53,95.53,0,0,0-6.11,34.13,89.77,89.77,0,0,0,6.07,32.9,78.22,78.22,0,0,0,17,26.59,73.55,73.55,0,0,0,26.29,17.16q15.36,6,34,4.62a84,84,0,0,0,34-9.64A92.35,92.35,0,0,0,307.58,317a93.4,93.4,0,0,0,17-29.1A96.46,96.46,0,0,0,328.36,275l-33.13,12.38A68,68,0,0,1,286,302Zm-89.5-62.36a71,71,0,0,1,11.67-20.94,62.79,62.79,0,0,1,17.37-14.88,49.39,49.39,0,0,1,21.35-6.6,46.22,46.22,0,0,1,21.36,3.28,50.8,50.8,0,0,1,17.58,12.14c.71.75,1.4,1.52,2.06,2.31L196,241.07C196.21,240.58,196.36,240.08,196.54,239.59Z"/><path class="cls-2" d="M417.45,275.71a40,40,0,0,1-14.87,2.66,20,20,0,0,1-12.53-4.07q-5.34-4.07-6-13.16V187.65L419,177.22l.27-23-35.15,10.16v-54l-27.57,8.07v53.93l-14.07,4.07V200.1l14.07-4.2v73.7q0,17.55,11,25.85t26,8.3a71.85,71.85,0,0,0,12.69-1.1,80.3,80.3,0,0,0,11.27-2.82q5.18-1.71,9.25-3.45t6.58-3l-6.58-21.93A63.71,63.71,0,0,1,417.45,275.71Z"/><path class="cls-2" d="M482.53,281.05V176.87a59.85,59.85,0,0,1,8.3-17.23,64.61,64.61,0,0,1,12.54-13.47,60.37,60.37,0,0,1,15.19-8.93A43.27,43.27,0,0,1,534.85,134q16.92,0,25.69,12.38t8.77,37.75v71.56l27.57-8.07V177.81a132.23,132.23,0,0,0-2.66-27.1,63,63,0,0,0-8.62-21.77,42.61,42.61,0,0,0-16-14.41q-10-5.32-24.44-5.33a68.94,68.94,0,0,0-36.34,10,72,72,0,0,0-26.32,27.88V0L455,8.07V289.12Z"/><path class="cls-2" d="M469,468.41q13.24,15.21,38.88,10.14c14.18-2.8,28-6.62,39.85-15.76s14.77-11.45,22-25.62l.39,24.25,27-7.92-.78-177.95h.54v-3l-28,8.21L569.48,400c-3.07,16.72-9.91,25.12-19.77,34.51S529.28,449.7,518,451.93q-34.71,6.84-35-44.92l-.4-101-27.51,8.05.42,103.86Q455.73,453.21,469,468.41Z"/>
+                    </svg>
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Work
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="/safetrips">SafeTrips Mobile Prototype</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>    <main>
+        <section class="hero case-study">
+            <div class="container-lg">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-4">
+                        <div class="image wow animate__animated animate__fadeInLeft">
+                            <a title="View Mid-Fidelity Prototype" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">
+                                <img class="" src="images/mobile-airline-info.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="content animate__animated animate__fadeInRight">
+                            <h1>SafeTrips</h1>
+                            <h2>A mobile app providing travelers with peer-reviewed safety information in an uncertain world.</h2>
+                            <ul class="details">
+                                <li>
+                                    <h3>My role</h3>
+                                    UX Research, UX Design, UI Design, Prototyping, User Testing
+                                </li>
+                                <li>
+                                    <h3>Team</h3>
+                                    Beth Culp & Jess Davis (UX Researcher)
+                                </li> 
+                                <li>
+                                    <h3>Timeline</h3>
+                                    4 weeks, February - March 2021
+                                </li>  
+                                <li>
+                                    <h3>Tools</h3>
+                                    Miro, Figma, Adobe XD, Flowmapp, Zoom, Otter, Google
+                                </li>   
+                            </ul>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blue intro">
+            <div class="container-lg">
+                <div class="row d-flex align-items-center py-3 py-md-4">
+                    
+                    <div class="col-sm-7">
+                        <h2>About this Project</h2>
+
+                        <h3>The Problem</h3>
+                        <p>How might we give concerned travelers valid, current COVID-19 related safety information for transportation services so that we can minimize their fears of traveling during and after the pandemic?</p>
+                
+                        <h3>The Solution</h3>
+                        <p>The SafeTrips mobile application empowers users to feel comfortable in their transportation choices by providing data-driven safety ratings of different travel services, based on both the service's safety protocols and real traveler experiences.</p>
+
+                        <h3>What I Learned</h3>
+                        <p>I dove head first into the user research for this project, which was an exciting challenge. I wanted to create something that spoke to our unique time in history, when the entire world was living in new circumstances due to the pandemic. This made for interesting interviews and conversations about how to approach the research with my partner. I also was new to Figma, and this project deepened my knowledge of how the functionality overlaps and differs from XD.</p>
+
+                    </div>
+                    <div class="col-sm-5">
+                        <img src="images/cover-photo.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-lg">
+                <div class="row d-flex justify-content-center">
+                    <!-- <div class="col-md-8">
+                        <ul class="case-study-nav">
+                            <li>
+                                <a href="#research">
+                                    <img src="../images/icon-ui.png" alt="Designer pen icon">
+                                    <span>Research</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#definition">
+                                    <img src="../images/icon-ui.png" alt="Designer pen icon">
+                                    <span>Ideation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#prototyping">
+                                    <img src="../images/icon-ui.png" alt="Designer pen icon">
+                                    <span>Prototyping</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#testing">
+                                    <img src="../images/icon-ui.png" alt="Designer pen icon">
+                                    <span>User Testing</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section id="research" class="process">
+            <div class="blue process-title">
+                <div class="container-lg">
+                    <h1>Research</h1>
+                </div>
+            </div>
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>How have the Covid-19 pandemic restrictions affected user's travel views and habits?</h2>
+                        <h3>Through video chat, we interviewed 5 millennials who were accustomed to traveling before the pandemic.</h3>
+                        <h3>Interview objectives:</h3>
+                        <ul class="list">
+                            <li>What were the user’s typical travel habits before the global pandemic, including how they plan their trip?</li>
+                            <li>What actions do they consider safe or risky during the pandemic?</li>
+                            <li>What makes traveling worth it to them?</li>
+                            <li>Have they traveled during the pandemic, and what have their considerations been in doing so?</li>
+                            <li>What do they expect to be different/stay the same when the global pandemic ends?</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/SafeTrips-affinity-diagram.jpg" alt="Affinity diagram of user interview notes grouped into categories">
+                        <figcaption>My research partner and I created an affinity diagram of common trends we had found from the interviews, and individually moved forward in the Ideation process from there.</figcaption>
+                    </div>
+                </div>
+                <div class="quotes">
+                        <div class="quote blue-light ">
+                            <i class="fas fa-plane"></i>
+                            <p>"Right now, it seems like every airline has its own process, airports have their own process."</p>
+                        </div>
+                        <div class="quote blue-light ">
+                            <i class="fas fa-head-side-mask"></i>
+                            <p>"It was imperative that I go on vacation. I just wore two masks and prayed for the best."</p>
+                        </div>
+                        <div class="quote blue-light ">
+                            <i class="fas fa-car-side"></i>
+                            <p>"I intentionally rented a car rather than going some other way, for safety reasons."</p>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 key-findings">
+                        <h2>Key Findings</h2>
+                        <ul class="list">
+                            <li>Users are still traveling during the pandemic, but in different ways depending on individual comfort levels.</li>
+                            <li>Users are uncertain of what safety procedures are in place for different services.</li>
+                            <li>Users are accustomed to reading reviews and trusting experiences of others when making travel decisions</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/sophie-user-persona.png" alt="User persona of Sophie">
+                        <figcaption>User persona for Sophie, a safety-conscious 31-year old woman who desperately wants to plan a plane trip to visit her family on the West Coast.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ideation" class="process">
+            <div class="blue process-title">
+                <div class="container-lg">
+                    <h1>Ideation</h1>
+                </div>
+            </div>
+            <div class="container-lg">
+                <div class="row"> 
+                    <div class="col-md-6">
+                        <img src="images/SafeTrips-feature-prioritization.jpg" alt="Feature prioritization matrix of ideas from brainstorm">
+                        <figcaption>Feature prioritiation matrix of ideas generated from brainstorming on the problem statement. The three features with the highest impact and mid-complexity are circled.</figcaption>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>How might we help alleviate travel fears during the pandemic?</h2>
+                        <p>An “I like, I wish, What if” brainstorm led me to generate a lot of features to address the problem statement. From there, I mapped out these ideas in a Feature Prioritization Matrix to find which features would be the most impactful, with the least amount of complexity. This would make an ideal Minimum Viable Product, with opportunities to expand into higher complexity items later.</p>
+                        <h3>Features the app would contain for MVP:</h3>
+                        <ul class="list">
+                            <li><strong>Customer safety reviews of specific travel services</strong></li>
+                            <li><strong>Safety rankings of different travel services</strong></li>
+                            <li><strong>Official safety protocols of travel services</strong></li>
+                        </ul>
+                        <p>Research had shown that users often looked at reviews during the traveling process. This indicated that the testimonials of others were an invaluable resource, and would add trust to the application.</p>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-12">
+                        <h2>User Journey Map</h2>
+                        <img src="images/Sophie-user-journey.jpg" alt="Journey map describing Sophie deciding to take the trip and using SafeTrips to book a flight and car service she sees is rated high for safety.">
+                        <figcaption>Journey map depicting Sophie deciding to book her trip despite her travel hesitations. She discovers SafeTrips and uses the ratings to book a flight and a car service she feels are safe.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prototyping" class="process">
+            <div class="blue process-title">
+                <div class="container-lg">
+                    <h1>Prototyping</h1>
+                </div>
+            </div>
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>How will the application interface work?</h2>
+                        <p>Before starting the app design, I created and iterated on a user flow. This helped me work out the key features to build out and test using the prototype, and then add in more features later.</p>
+                        <h3>User flow contains:</h3>
+                        <ul class="list">
+                            <li>Onboarding to the application using email, social media, or skipping registration</li>
+                            <li>Search by trip details to see what services are available, or search for a specific service/company directly</li>
+                            <li>Options for different types of travel, sorted by safety rating</li>
+                            <li>Individual service page containing reviews, safety stats, and booking</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/SafeTrips-user-flow.png" alt="User flow of registration and searching for a flight">
+                        <figcaption>User flow containing app onboarding and travel service search process</figcaption>
+                    </div>
+                </div>
+                <div class="row blue-light proto-images padding-lg"> 
+                    <div class="col-md-12">
+                        <h2>Sketches</h2>
+                        <div class="images">
+                            <img src="images/sketches/safetrips-13.png" alt="">
+                            <img src="images/sketches/safetrips-14.png" alt="">
+                            <img src="images/sketches/safetrips-15.png" alt="">
+                            <img src="images/sketches/safetrips-16.png" alt="">
+                            <img src="images/sketches/safetrips-17.png" alt="">
+                            <img src="images/sketches/safetrips-18.png" alt="">
+                        </div>
+                        <figcaption>Sketches of the SafeTrips mobile app, based on the user flow of the user entering trip details and picking the safest-rated airline.</figcaption>
+                    </div>
+                </div>
+                <div class="row blue-light padding-lg proto-images"> 
+                    <div class="col-md-12">
+                        <h2>Mid-fidelity Prototype</h2>
+                        <div class="images">
+                            <img src="images/mid-fidelity/v1/safetrips-14.png" alt="">
+                            <img src="images/mid-fidelity/v1/safetrips-14.png" alt="">
+                            <img src="images/mid-fidelity/v1/safetrips-15.png" alt="">
+                            <img src="images/mid-fidelity/v1/safetrips-16.png" alt="">
+                            <img src="images/mid-fidelity/v1/safetrips-17.png" alt="">
+                            <img src="images/mid-fidelity/v1/safetrips-18.png" alt="">
+
+                        </div>
+                        <figcaption>Mid-fidelity mockups of the SafeTrips mobile app, created in Figma, based off of the initial sketches.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testing" class="process">
+            <div class="blue process-title">
+                <div class="container-lg">
+                    <h1>User Testing</h1>
+                </div>
+            </div>
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>What needs to be adjusted in the prototype?</h2>
+                        <p>I conducted a group Guerrilla usability testing session over zoom with 4 participants, as well as in-person testing with 2 other participants, using the clickable Figma prototype on a laptop.</p>
+                        <p>From there, I organized the issues into a priority matrix, accounting for both the user priorities and the effort of the change. Below, I illustrate some of the design changes that were made.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/SafeTrips-usability-testing.jpg" alt="Sticky notes showing usability testing issues">
+                        <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
+                    </div>
+                    
+                </div>
+                <section class="iterations">
+                    <h2>Design Iterations</h2>
+                    <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
+                        <div class="col-md-6">
+                            <h2>Individual travel service details</h2>
+                            <h3>Feedback:</h3>
+                            <ul class="list">
+                                <li>Individual airline page is confusing, users unsure how to find flights</li>
+                                <li>Light blue accent color is hard to see</li>
+                                <li>Users unsure what the checklist means</li>
+                            </ul>
+
+                            <h3>Modifications:</h3>
+                            <ul class="list">
+                                <li>Converted tab menu to accordion for better visual clarity</li>
+                                <li>Changed accent color to orange for better contrast</li>
+                                <li>Added explanation for safety statistics and converted from checklist to percentage</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="images">
+                                <img src="images/mid-fidelity/iteration1_1.png" alt="">
+                                <img src="images/mid-fidelity/iteration1_2.png" alt="">
+                            </div>
+                            <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
+                        </div>
+                    </div>
+                    <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
+                        
+                        <div class="col-md-6">
+                            <h2>Onboarding tips</h2>
+                            <h3>Feedback:</h3>
+                            <ul class="list">
+                                <li>Users unsure where they are in the application</li>
+                                <li>Copy says enter your destination but there’s no visible field to enter it in</li>
+                                <li>Users unsure what the arrow is and if it is interactive</li>
+                            </ul>
+
+                            <h3>Modifications:</h3>
+                            <ul class="list">
+                                <li>Added dark overlay behind onboarding message to indicate this is a closable message</li>
+                                <li>Updated copy to reduce confusion</li>
+                                <li>Removed arrow and replaced with highlighted state on clickable menu</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="images">
+                                <img src="images/mid-fidelity/iteration2_1.png" alt="">
+                                <img src="images/mid-fidelity/iteration2_2.png" alt="">
+                            </div>
+                            <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
+                        </div>
+                    </div>
+                    <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
+                        <div class="col-md-6">
+                            <h2>Travel options</h2>
+                            <h3>Feedback:</h3>
+                            <ul class="list">
+                                <li>Users not sure if they are in the right place as trip details aren’t shown</li>
+                                <li>"Safest" and "fastest" tags not noticable</li>
+                            </ul>
+
+                            <h3>Modifications:</h3>
+                            <ul class="list">
+                                <li>Added the user’s trip details under heading to indicate these results are for their trip</li>
+                                <li>Changed highlight color to orange for better contrast</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="images">
+                                <img src="images/mid-fidelity/iteration3_1.png" alt="">
+                                <img src="images/mid-fidelity/iteration3_2.png" alt="">
+                            </div>
+                            <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="case-study blue">
+            <div class="container-lg">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-4">
+
+                        <div class="image wow animate__animated animate__fadeInLeft">
+                            <a title="View Mid-Fidelity Prototype" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">
+                                <img class="" src="images/mobile-airline-info.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="content animate__animated animate__fadeInRight">
+                            <h2>Conclusion</h2>
+                            <p>The SafeTrips prototype demonstrates the value of crowd-sourced ratings and testimonials for travel safety. Data-driven ratings will help users feel that services have been looked at thoroughly, and that they are doing their due diligence when booking travel in a time of safety uncertainty.</p>
+
+                            <h2>Next Steps</h2>
+                            <ul class="list">
+                                <li>Continue with high-fidelity prototype design, including branding</li>
+                                <li>Figure out how to start getting people to review their transportation services to build database of traveler reviews and statistics</li>
+                                <li>Explore how the app could be adapted for other safety issues after the pandemic has become less of a travel risk</li>
+                            </ul>
+
+                            <a href="/about" class="btn" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">Explore the Prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer>
+        <div class="bg-image"></div>
+        <div class="container">
+            <h1>Let's connect.</h1>
+            <h2>Email me at <a href="mailto:bethculp.2010@gmail.com">bethculp.2010@gmail.com</a></h2>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/bethculp/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="bg-image"></div>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
