@@ -26,4 +26,10 @@ $width-lg: 992px;
 $width-xl: 1200px;
 $width-xxl: 1400px;
 
-$blue-border-bottom:$space-xs solid $blue;
+.padding-lg{
+    padding:$space-lg;
+}
+
+$blue-border:$space-xs solid $blue;
+
+

@@ -111,8 +111,15 @@ figcaption{
 
 .container{
     max-width:$width-xxl;
+}
+
+*[class*='container']{
     margin:0 auto;
-    padding:$space-xl;
+    padding:$space-lg;
+
+    @include breakpoint(sm){
+        padding:$space-xl;
+    }
     @include breakpoint(md){
         padding:$space-xxl $space-xl;
     }
@@ -121,9 +128,30 @@ figcaption{
     }
 }
 
+div[class*='col-md-']{
+    + div[class*='col-md']{
+        margin-top:$space-md;
+        @include breakpoint(md){
+            margin-top:0;
+        }
+    }
+    
+}
+
+div[class*='col-sm-']{
+    + div[class*='col-sm']{
+        margin-top:$space-md;
+        @include breakpoint(sm){
+            margin-top:0;
+        }
+    }
+    
+}
+
+
 /*HEADER*/
 header{
-    border-bottom:$blue-border-bottom; 
+    border-bottom:$blue-border; 
     .container{
         display:flex;
         align-items:center;
@@ -147,11 +175,14 @@ header{
         display:flex;
         justify-content: space-between;
         a{
-            @include heading-xs;
+            @include heading-sm;
             font-family:$primary-font;
-            text-transform: lowercase;
-            + a{
-                margin-left:$space-lg;
+        }
+        li{
+            @include breakpoint(md){
+                + li{
+                    margin-left:$space-lg;
+                }
             }
         }
     }
@@ -162,7 +193,7 @@ header{
 
 /*HERO*/
 section.hero{
-    border-bottom:$blue-border-bottom;         
+    border-bottom:$blue-border;         
     .container{
         @include layout(50%);
         @include breakpoint(md){
@@ -208,7 +239,7 @@ section.hero{
 /*HOMEPAGE*/    
 section.skills,
 section.work{
-    .container > h1{
+    *[class*='container'] > h1{
         text-align:center;
         @include heading-lg;
         @include breakpoint(md){
@@ -223,7 +254,7 @@ section.skills{
         padding-bottom:$space-sm;
         text-align: center;
     }
-    .container{
+    *[class*='container']{
         max-width:$width-xl;
         display:grid;
         grid-template-columns: 100%;
@@ -272,7 +303,7 @@ section.skills{
     //     }
     // }
     @include breakpoint(sm){
-        .container{
+        *[class*='container']{
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto auto;
             h1{
@@ -302,7 +333,7 @@ section.skills{
 }
 
 section.work{
-    border-bottom: $blue-border-bottom;
+    border-bottom: $blue-border;
     article{
         @include layout(50%);
         margin-top:$space-xl;
@@ -316,9 +347,6 @@ section.work{
             transition:transform .5s ease, box-shadow .5s ease;
             &:hover{
                 transform: scale(1.02);
-                // box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
-                // -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
-                // -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
             }
         }
         .tags{
@@ -365,22 +393,12 @@ footer{
         }
     }
     
-    
-    @include breakpoint(lg){
-        // .bg-image{
-        //     display:none;
-        // }
-        // display:block;
-        // background-image: url(../images/wiggle-left-bottom.png), url(../images/wiggle-right-bottom.png);
-        // background-position: left bottom, right bottom;
-        // background-repeat: no-repeat, no-repeat;
-        // background-size:contain;
-    }
     .container{
         display:flex;
         flex-direction:column;
         align-items:center;
         text-align: center;
+        padding:$space-lg 0;
         > * + *{
             margin-top:$space-lg;
         }
@@ -450,7 +468,7 @@ section.hero.case-study{
         li{
             h3{
                 font-weight:$font-bold;
-                @include heading-xs;
+                @include heading-sm;
             }
         }
     }
@@ -459,7 +477,8 @@ section.hero.case-study{
 section{
     h1, h2, h3, p, ul{
         + h2,
-        + h3{
+        + h3,
+        + .btn{
             margin-top:$space-md;
         }
     }
@@ -486,12 +505,13 @@ section{
 
 .process-title{
     text-align: center;
-    .container{
+    *[class*='container-']{
         padding-top:$space-lg;
         padding-bottom:$space-lg;
     }
-    + .container{
+    + *[class*='container-']{
         padding-top:$space-xl;
+    
     }
 }
 
@@ -522,6 +542,7 @@ section.process{
     margin:$space-xl 0;
     text-align:center;
     @include layout(33.33%);
+    align-items:stretch;
     .quote{
         padding:$space-lg;
         display:flex;
@@ -537,9 +558,7 @@ section.process{
     }
 }
 
-.padding-lg{
-    padding:$space-lg;
-}
+
 
 .proto-images{
     .images{
@@ -557,6 +576,21 @@ section.process{
     }
 }
 
+section.iterations{
+    > h2{
+        text-align:center;
+        margin:$space-lg 0;
+    }
+    @include breakpoint(md){
+        div:nth-of-type(2n){
+            & > *:first-child{
+                order:1;
+            }
+        }
+    }
+
+}
+
 .col-md-12{
     > h2{
         text-align:center;
@@ -564,3 +598,6 @@ section.process{
     }
 }
 
+.iterations-headline{
+    margin:0;
+}

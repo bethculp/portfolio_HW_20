@@ -15,10 +15,12 @@
     <main>
         <section class="hero case-study">
             <div class="container-lg">
-                <div class="row d-flex align-items-center my-3 my-md-4 my-lg-5">
+                <div class="row d-flex align-items-center">
                     <div class="col-md-4">
                         <div class="image wow animate__animated animate__fadeInLeft">
-                            <img class="" src="images/mobile-airline-info.png">
+                            <a title="View Mid-Fidelity Prototype" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">
+                                <img class="" src="images/mobile-airline-info.png">
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -49,7 +51,7 @@
                 </div>
             </div>
         </section>
-        <section class="blue intro py-3 py-md-4 py-lg-5">
+        <section class="blue intro">
             <div class="container-lg">
                 <div class="row d-flex align-items-center py-3 py-md-4">
                     
@@ -67,16 +69,15 @@
 
                     </div>
                     <div class="col-sm-5">
-                            <img src="images/cover-photo.jpg">
-                            More images here
+                        <img src="images/cover-photo.jpg">
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="container-lg">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-8">
+                    <!-- <div class="col-md-8">
                         <ul class="case-study-nav">
                             <li>
                                 <a href="#research">
@@ -103,17 +104,17 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
         <section id="research" class="process">
             <div class="blue process-title">
-                <div class="container">
+                <div class="container-lg">
                     <h1>Research</h1>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-lg">
                 <div class="row">
                     <div class="col-md-6">
                         <h2>How have the Covid-19 pandemic restrictions affected user's travel views and habits?</h2>
@@ -165,11 +166,11 @@
 
         <section id="ideation" class="process">
             <div class="blue process-title">
-                <div class="container">
+                <div class="container-lg">
                     <h1>Ideation</h1>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-lg">
                 <div class="row"> 
                     <div class="col-md-6">
                         <img src="images/SafeTrips-feature-prioritization.jpg" alt="Feature prioritization matrix of ideas from brainstorm">
@@ -199,11 +200,11 @@
 
         <section id="prototyping" class="process">
             <div class="blue process-title">
-                <div class="container">
+                <div class="container-lg">
                     <h1>Prototyping</h1>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-lg">
                 <div class="row">
                     <div class="col-md-6">
                         <h2>How will the application interface work?</h2>
@@ -255,16 +256,16 @@
 
         <section id="testing" class="process">
             <div class="blue process-title">
-                <div class="container">
+                <div class="container-lg">
                     <h1>User Testing</h1>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-lg">
                 <div class="row">
                     <div class="col-md-6">
                         <h2>What needs to be adjusted in the prototype?</h2>
                         <p>I conducted a group Guerrilla usability testing session over zoom with 4 participants, as well as in-person testing with 2 other participants, using the clickable Figma prototype on a laptop.</p>
-                        <p>From there, I organized the issues into a priority matrix, accounting for both the user priorities and the effort of the change.</p>
+                        <p>From there, I organized the issues into a priority matrix, accounting for both the user priorities and the effort of the change. Below, I illustrate some of the design changes that were made.</p>
                     </div>
                     <div class="col-md-6">
                         <img src="images/SafeTrips-usability-testing.jpg" alt="Sticky notes showing usability testing issues">
@@ -272,82 +273,110 @@
                     </div>
                     
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Design Iterations After Testing</h2>
+                <section class="iterations">
+                    <h2>Design Iterations</h2>
+                    <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
+                        <div class="col-md-6">
+                            <h2>Individual travel service details</h2>
+                            <h3>Feedback:</h3>
+                            <ul class="list">
+                                <li>Individual airline page is confusing, users unsure how to find flights</li>
+                                <li>Light blue accent color is hard to see</li>
+                                <li>Users unsure what the checklist means</li>
+                            </ul>
+
+                            <h3>Modifications:</h3>
+                            <ul class="list">
+                                <li>Converted tab menu to accordion for better visual clarity</li>
+                                <li>Changed accent color to orange for better contrast</li>
+                                <li>Added explanation for safety statistics and converted from checklist to percentage</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="images">
+                                <img src="images/mid-fidelity/iteration1_1.png" alt="">
+                                <img src="images/mid-fidelity/iteration1_2.png" alt="">
+                            </div>
+                            <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
+                        </div>
+                    </div>
+                    <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
+                        
+                        <div class="col-md-6">
+                            <h2>Onboarding tips</h2>
+                            <h3>Feedback:</h3>
+                            <ul class="list">
+                                <li>Users unsure where they are in the application</li>
+                                <li>Copy says enter your destination but there’s no visible field to enter it in</li>
+                                <li>Users unsure what the arrow is and if it is interactive</li>
+                            </ul>
+
+                            <h3>Modifications:</h3>
+                            <ul class="list">
+                                <li>Added dark overlay behind onboarding message to indicate this is a closable message</li>
+                                <li>Updated copy to reduce confusion</li>
+                                <li>Removed arrow and replaced with highlighted state on clickable menu</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="images">
+                                <img src="images/mid-fidelity/iteration2_1.png" alt="">
+                                <img src="images/mid-fidelity/iteration2_2.png" alt="">
+                            </div>
+                            <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
+                        </div>
+                    </div>
+                    <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
+                        <div class="col-md-6">
+                            <h2>Travel options</h2>
+                            <h3>Feedback:</h3>
+                            <ul class="list">
+                                <li>Users not sure if they are in the right place as trip details aren’t shown</li>
+                                <li>"Safest" and "fastest" tags not noticable</li>
+                            </ul>
+
+                            <h3>Modifications:</h3>
+                            <ul class="list">
+                                <li>Added the user’s trip details under heading to indicate these results are for their trip</li>
+                                <li>Changed highlight color to orange for better contrast</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="images">
+                                <img src="images/mid-fidelity/iteration3_1.png" alt="">
+                                <img src="images/mid-fidelity/iteration3_2.png" alt="">
+                            </div>
+                            <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
+                        </div>
                     </div>
                 </div>
-                <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
-                    <div class="col-md-6">
-                        <h2>Individual travel service details</h2>
-                        <h3>Feedback:</h3>
-                        <ul class="list">
-                            <li>Individual airline page is confusing, users unsure how to find flights</li>
-                            <li>Light blue accent color is hard to see</li>
-                            <li>Users unsure what the checklist means</li>
-                        </ul>
+            </div>
+        </section>
+        <section class="case-study blue">
+            <div class="container-lg">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-4">
 
-                        <h3>Modifications:</h3>
-                        <ul class="list">
-                            <li>Converted tab menu to accordion for better visual clarity</li>
-                            <li>Changed accent color to orange for better contrast</li>
-                            <li>Added explanation for safety statistics and converted from checklist to percentage</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="images">
-                            <img src="images/mid-fidelity/iteration1_1.png" alt="">
-                            <img src="images/mid-fidelity/iteration1_2.png" alt="">
+                        <div class="image wow animate__animated animate__fadeInLeft">
+                            <a title="View Mid-Fidelity Prototype" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">
+                                <img class="" src="images/mobile-airline-info.png">
+                            </a>
                         </div>
-                        <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
                     </div>
-                </div>
-                <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
-                    <div class="col-md-6">
-                        <div class="images">
-                            <img src="images/mid-fidelity/iteration2_1.png" alt="">
-                            <img src="images/mid-fidelity/iteration2_2.png" alt="">
-                        </div>
-                        <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Onboarding tips</h2>
-                        <h3>Feedback:</h3>
-                        <ul class="list">
-                            <li>Users unsure where they are in the application</li>
-                            <li>Copy says enter your destination but there’s no visible field to enter it in</li>
-                            <li>Users unsure what the arrow is and if it is interactive</li>
-                        </ul>
+                    <div class="col-md-8">
+                        <div class="content animate__animated animate__fadeInRight">
+                            <h2>Conclusion</h2>
+                            <p>The SafeTrips prototype demonstrates the value of crowd-sourced ratings and testimonials for travel safety. Data-driven ratings will help users feel that services have been looked at thoroughly, and that they are doing their due diligence when booking travel in a time of safety uncertainty.</p>
 
-                        <h3>Modifications:</h3>
-                        <ul class="list">
-                            <li>Added dark overlay behind onboarding message to indicate this is a closable message</li>
-                            <li>Updated copy to reduce confusion</li>
-                            <li>Removed arrow and replaced with highlighted state on clickable menu</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row blue-light iteration padding-lg d-flex justify-content-center align-items-center"> 
-                    <div class="col-md-6">
-                        <h2>Travel options</h2>
-                        <h3>Feedback:</h3>
-                        <ul class="list">
-                            <li>Users not sure if they are in the right place as trip details aren’t shown</li>
-                            <li>"Safest" and "fastest" tags not noticable</li>
-                        </ul>
+                            <h2>Next Steps</h2>
+                            <ul class="list">
+                                <li>Continue with high-fidelity prototype design, including branding</li>
+                                <li>Figure out how to start getting people to review their transportation services to build database of traveler reviews and statistics</li>
+                                <li>Explore how the app could be adapted for other safety issues after the pandemic has become less of a travel risk</li>
+                            </ul>
 
-                        <h3>Modifications:</h3>
-                        <ul class="list">
-                            <li>Added the user’s trip details under heading to indicate these results are for their trip</li>
-                            <li>Changed highlight color to orange for better contrast</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="images">
-                            <img src="images/mid-fidelity/iteration3_1.png" alt="">
-                            <img src="images/mid-fidelity/iteration3_2.png" alt="">
+                            <a href="/about" class="btn" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">Explore the Prototype</a>
                         </div>
-                        <figcaption>The usability testing notes arranged by testing tasks. The darker colors represent multiple users having the same outcome, while the lighter colors are less users (also shown by numbers in parantheses)</figcaption>
                     </div>
                 </div>
             </div>
