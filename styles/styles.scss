@@ -73,13 +73,28 @@ ul.list{
 ul, p{
     margin-bottom:0;
     + p,
-    + ul{
+    + ul,
+    + h2,
+    + h3,
+    + .btn{
         margin-top:$space-md;
     }
 }
 
+h1, h2, h3{
+    + h2,
+    + h3,
+    + .btn{
+        margin-top:$space-md;
+    }
+    + p,
+    + ul{
+        margin-top:$space-sm;
+    }
+}
+
 figcaption{
-    @include small-font-size;
+    @include body-small-font-size;
     padding-top:$space-sm;
 }
 
@@ -475,32 +490,138 @@ section.hero.case-study{
 }
 
 section{
-    h1, h2, h3, p, ul{
-        + h2,
-        + h3,
-        + .btn{
-            margin-top:$space-md;
-        }
-    }
     .row + .row{
         margin-top:$space-xl;
     }
+    .middle-heading.row {
+        margin-top:$space-lg;
+        & + .row{
+            margin-top:$space-md;
+        }
+    }
+}
+
+.faded-background{
+    background:url(../images/wiggles-faded.jpg) center center no-repeat;
 }
 
 .case-study-nav{
     display:flex;
-    align-items:center;
-    justify-content: center;
-    gap:$space-md;
+    flex-direction: column;
+    margin-top:0;
+    position: relative;
+    @include breakpoint(sm){
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+    }
+    @include breakpoint(md){
+        gap:$space-lg;
+        justify-content: center;
+    }
+    @include breakpoint(lg){
+        gap:$space-xl;
+        margin-top:$space-lg;
+    }
+    .line{
+        display:none;
+        width:100%;
+        height:4px;
+        background:$blue;
+        position:absolute;
+        top:3em;
+        left:0;
+        animation-delay: 1s;
+        @include breakpoint(sm){
+            display:block;
+        }
+        @include breakpoint(md){
+            top:4.5em;
+        }
+        @include breakpoint(xl){
+            top:6em;
+        }
+    }
+    li{
+        + li{
+            margin-top:$space-md;
+            @include breakpoint(sm){
+                margin-top:0;
+            }
+        }
+        &.animate__animated.animate__fadeInDown{
+            &:nth-of-type(2){
+                animation-delay: .25s;
+            }
+            &:nth-of-type(3){
+                animation-delay: .5s;
+            }
+            &:nth-of-type(4){
+                animation-delay: .75s;
+            }
+        }
+    }
     a{
         display:flex;
         flex-direction:column;
         align-items:center;
-        @include sm-font-size;
-        img{
-            margin-bottom:$space-sm;
+        @include transition(color);
+        @include body-font-size;
+        @include breakpoint(md){
+            @include heading-sm;
         }
+        .circle{
+            background-color:$red;
+            border-radius: 50%;
+            width:6.5em;
+            height:6.5em;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            @include transition(background-color);
+            background-image:url(../images/blue-wiggles-bg.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            position:relative;
+            margin-bottom:$space-sm;
+            &:before{
+                content:'';
+                display:block;
+                position:absolute;
+                border-radius: 50%;
+                height:100%;
+                width:100%;
+                background-color:$red;
+                @include transition(background-color);
+                z-index:0;
+            }
+
+        }        
+        .icon{
+            margin:1em;
+            width:4.5em;
+            height:4.5em;
+        }
+        svg{
+            fill:$white;
+            z-index:1;
+            position:relative;
+            @include transition(fill);
+        }
+        &:hover{
+            .circle{
+                background-color:$blue;
+                &:before{
+                    background-color:transparent;
+                }
+            }
+            
+        
+        }
+        
     }
+    
+    
 }
 
 .process-title{
@@ -532,8 +653,9 @@ section.process{
     ul {
         padding-left: 2rem;
         li{
-        @include heading-sm;
-        font-family: $primary-font;
+            @include heading-sm;
+            font-family: $primary-font;
+            margin:$space-md 0;
         }
     }
 }

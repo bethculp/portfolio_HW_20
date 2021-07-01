@@ -78,6 +78,10 @@ h3 {
 h4 {
   font-size: 1.333rem;
   line-height: 1.5rem; }
+  @media (min-width: 1200px) {
+    h4 {
+      font-size: 1.777rem;
+      line-height: 2.5rem; } }
 
 svg,
 img {
@@ -97,9 +101,29 @@ ul.list {
 ul, p {
   margin-bottom: 0; }
   ul + p,
-  ul + ul, p + p,
-  p + ul {
+  ul + ul,
+  ul + h2,
+  ul + h3,
+  ul + .btn, p + p,
+  p + ul,
+  p + h2,
+  p + h3,
+  p + .btn {
     margin-top: 1rem; }
+
+h1 + h2,
+h1 + h3,
+h1 + .btn, h2 + h2,
+h2 + h3,
+h2 + .btn, h3 + h2,
+h3 + h3,
+h3 + .btn {
+  margin-top: 1rem; }
+h1 + p,
+h1 + ul, h2 + p,
+h2 + ul, h3 + p,
+h3 + ul {
+  margin-top: 0.5rem; }
 
 figcaption {
   font-size: .825rem;
@@ -197,6 +221,10 @@ header {
       font-size: 1.333rem;
       line-height: 1.5rem;
       font-family: "Oswald", sans-serif; }
+      @media (min-width: 1200px) {
+        header nav a {
+          font-size: 1.777rem;
+          line-height: 2.5rem; } }
     @media (min-width: 768px) {
       header nav li + li {
         margin-left: 1.5rem; } }
@@ -241,6 +269,10 @@ section.hero {
   section.hero h3 {
     font-size: 1.333rem;
     line-height: 1.5rem; }
+    @media (min-width: 1200px) {
+      section.hero h3 {
+        font-size: 1.777rem;
+        line-height: 2.5rem; } }
   section.hero p {
     font-size: 1.777rem;
     line-height: 2.5rem;
@@ -448,6 +480,10 @@ footer {
       font-size: 1.333rem;
       line-height: 1.5rem;
       font-family: "Oswald", sans-serif; }
+      @media (min-width: 1200px) {
+        footer ul li {
+          font-size: 1.777rem;
+          line-height: 2.5rem; } }
       footer ul li + li {
         margin-left: 1.5rem; }
 
@@ -465,35 +501,121 @@ section.hero.case-study ul.details li h3 {
   font-weight: 500;
   font-size: 1.333rem;
   line-height: 1.5rem; }
+  @media (min-width: 1200px) {
+    section.hero.case-study ul.details li h3 {
+      font-size: 1.777rem;
+      line-height: 2.5rem; } }
 
-section h1 + h2,
-section h1 + h3,
-section h1 + .btn, section h2 + h2,
-section h2 + h3,
-section h2 + .btn, section h3 + h2,
-section h3 + h3,
-section h3 + .btn, section p + h2,
-section p + h3,
-section p + .btn, section ul + h2,
-section ul + h3,
-section ul + .btn {
-  margin-top: 1rem; }
 section .row + .row {
   margin-top: 3rem; }
+section .middle-heading.row {
+  margin-top: 1.5rem; }
+  section .middle-heading.row + .row {
+    margin-top: 1rem; }
+
+.faded-background {
+  background: url(../images/wiggles-faded.jpg) center center no-repeat; }
 
 .case-study-nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem; }
+  flex-direction: column;
+  margin-top: 0;
+  position: relative; }
+  @media (min-width: 576px) {
+    .case-study-nav {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; } }
+  @media (min-width: 768px) {
+    .case-study-nav {
+      gap: 1.5rem;
+      justify-content: center; } }
+  @media (min-width: 992px) {
+    .case-study-nav {
+      gap: 3rem;
+      margin-top: 1.5rem; } }
+  .case-study-nav .line {
+    display: none;
+    width: 100%;
+    height: 4px;
+    background: #0177BF;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    animation-delay: 1s; }
+    @media (min-width: 576px) {
+      .case-study-nav .line {
+        display: block; } }
+    @media (min-width: 768px) {
+      .case-study-nav .line {
+        top: 4.5em; } }
+    @media (min-width: 1200px) {
+      .case-study-nav .line {
+        top: 6em; } }
+  .case-study-nav li + li {
+    margin-top: 1rem; }
+    @media (min-width: 576px) {
+      .case-study-nav li + li {
+        margin-top: 0; } }
+  .case-study-nav li.animate__animated.animate__fadeInDown:nth-of-type(2) {
+    animation-delay: .25s; }
+  .case-study-nav li.animate__animated.animate__fadeInDown:nth-of-type(3) {
+    animation-delay: .5s; }
+  .case-study-nav li.animate__animated.animate__fadeInDown:nth-of-type(4) {
+    animation-delay: .75s; }
   .case-study-nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.777rem;
-    line-height: 2.5rem; }
-    .case-study-nav a img {
+    transition: color ease 0.65s;
+    font-size: 1rem;
+    line-height: 1.5rem; }
+    @media (min-width: 768px) {
+      .case-study-nav a {
+        font-size: 1.333rem;
+        line-height: 1.5rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .case-study-nav a {
+      font-size: 1.777rem;
+      line-height: 2.5rem; } }
+
+    .case-study-nav a .circle {
+      background-color: #CC483E;
+      border-radius: 50%;
+      width: 6.5em;
+      height: 6.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color ease 0.65s;
+      background-image: url(../images/blue-wiggles-bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
       margin-bottom: 0.5rem; }
+      .case-study-nav a .circle:before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        background-color: #CC483E;
+        transition: background-color ease 0.65s;
+        z-index: 0; }
+    .case-study-nav a .icon {
+      margin: 1em;
+      width: 4.5em;
+      height: 4.5em; }
+    .case-study-nav a svg {
+      fill: #fff;
+      z-index: 1;
+      position: relative;
+      transition: fill ease 0.65s; }
+    .case-study-nav a:hover .circle {
+      background-color: #0177BF; }
+      .case-study-nav a:hover .circle:before {
+        background-color: transparent; }
 
 .process-title {
   text-align: center; }
@@ -518,6 +640,10 @@ section.process h2 {
 section.process h3 {
   font-size: 1.333rem;
   line-height: 1.5rem; }
+  @media (min-width: 1200px) {
+    section.process h3 {
+      font-size: 1.777rem;
+      line-height: 2.5rem; } }
 section.process img {
   border: 1px solid #000; }
 
@@ -526,7 +652,12 @@ section.process img {
   .key-findings ul li {
     font-size: 1.333rem;
     line-height: 1.5rem;
-    font-family: "Oswald", sans-serif; }
+    font-family: "Oswald", sans-serif;
+    margin: 1rem 0; }
+    @media (min-width: 1200px) {
+      .key-findings ul li {
+        font-size: 1.777rem;
+        line-height: 2.5rem; } }
 
 .quotes {
   margin: 3rem 0;

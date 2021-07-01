@@ -65,12 +65,12 @@
     line-height:1.5rem;
 }
 
-@mixin small-font-size{
+@mixin body-small-font-size{
     font-size:.825rem;
     line-height:1rem;
 }
 
-@mixin tiny-font-size{
+@mixin body-tiny-font-size{
     font-size:.75rem;
     line-height:1rem;
 }
@@ -106,7 +106,10 @@
 }
 
 @mixin heading-sm{
-        @include xs-font-size();
+    @include xs-font-size();
+    @include breakpoint(xl){
+        @include sm-font-size();
+    }
     
 }
 
