@@ -662,10 +662,14 @@ section.process{
     }
 }
 
+.quotes{
+    @include layout(33.33%);
+    align-items:stretch;
+}
+
 .boxes{
     margin:$space-xl 0;
     text-align:center;
-    align-items:stretch;
     .box{
         padding:$space-lg;
         display:flex;
@@ -680,9 +684,7 @@ section.process{
         font-size:2em;
     }
 }
-.quotes{
-    @include layout(33.33%);
-}
+
 
 
 
