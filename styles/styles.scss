@@ -76,7 +76,8 @@ ul, p{
     + ul,
     + h2,
     + h3,
-    + .btn{
+    + .btn,
+    + img{
         margin-top:$space-md;
     }
 }
@@ -88,7 +89,8 @@ h1, h2, h3{
         margin-top:$space-md;
     }
     + p,
-    + ul{
+    + ul,
+    + img{
         margin-top:$space-sm;
     }
 }
@@ -660,12 +662,11 @@ section.process{
     }
 }
 
-.quotes{
+.boxes{
     margin:$space-xl 0;
     text-align:center;
-    @include layout(33.33%);
     align-items:stretch;
-    .quote{
+    .box{
         padding:$space-lg;
         display:flex;
         flex-direction:column;
@@ -678,6 +679,9 @@ section.process{
         padding-bottom:$space-md;
         font-size:2em;
     }
+}
+.quotes{
+    @include layout(33.33%);
 }
 
 

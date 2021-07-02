@@ -104,11 +104,13 @@ ul, p {
   ul + ul,
   ul + h2,
   ul + h3,
-  ul + .btn, p + p,
+  ul + .btn,
+  ul + img, p + p,
   p + ul,
   p + h2,
   p + h3,
-  p + .btn {
+  p + .btn,
+  p + img {
     margin-top: 1rem; }
 
 h1 + h2,
@@ -120,9 +122,12 @@ h3 + h3,
 h3 + .btn {
   margin-top: 1rem; }
 h1 + p,
-h1 + ul, h2 + p,
-h2 + ul, h3 + p,
-h3 + ul {
+h1 + ul,
+h1 + img, h2 + p,
+h2 + ul,
+h2 + img, h3 + p,
+h3 + ul,
+h3 + img {
   margin-top: 0.5rem; }
 
 figcaption {
@@ -659,14 +664,27 @@ section.process img {
         font-size: 1.777rem;
         line-height: 2.5rem; } }
 
-.quotes {
+.boxes {
   margin: 3rem 0;
   text-align: center;
+  align-items: stretch; }
+  .boxes .box {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .boxes .fas {
+    color: #0177BF;
+    padding-bottom: 1rem;
+    font-size: 2em; }
+
+.quotes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  align-items: stretch; }
+  align-items: center; }
   .quotes > *:not(img) {
     width: 100%; }
   .quotes > img {
@@ -682,17 +700,6 @@ section.process img {
       text-align: left; }
       .quotes > *:not(img) + *, .quotes > * + * {
         margin-top: 0; } }
-  .quotes .quote {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  .quotes .fas {
-    color: #0177BF;
-    padding-bottom: 1rem;
-    font-size: 2em; }
 
 .proto-images .images {
   display: flex;

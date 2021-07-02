@@ -3,11 +3,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="../styles/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../mklb/css/mklb.css" />
+    <link rel="stylesheet" href="../lumos/lumos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/bc11ea228d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+    
+    
     <title>SafeTrips Mobile Prototype | Beth Culp</title>
 </head>
 <body>
@@ -267,22 +271,30 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/SafeTrips-affinity-diagram.jpg" alt="Affinity diagram of user interview notes grouped into categories">
+                        <img src="images/SafeTrips-affinity-diagram.jpg"
+                         alt="Affinity diagram of user interview notes grouped into categories"
+                         data-action="lumos"
+                         data-lumos-src="images/SafeTrips-affinity-diagram.jpg"
+                         data-lumos-caption="My research partner and I created an affinity diagram of common trends we had found from the interviews, and individually moved forward in the Ideation process from there."
+                         class="m-auto"/>
+                        
                         <figcaption>My research partner and I created an affinity diagram of common trends we had found from the interviews, and individually moved forward in the Ideation process from there.</figcaption>
+
+                        
                     </div>
                 </div>
-                <div class="quotes">
-                        <div class="quote blue-light ">
+                <div class="quotes boxes">
+                        <div class="box blue-light ">
                             <i class="fas fa-plane"></i>
-                            <p>"Right now, it seems like every airline has its own process, airports have their own process."</p>
+                            <p class="quote">"Right now, it seems like every airline has its own process, airports have their own process."</p>
                         </div>
-                        <div class="quote blue-light ">
+                        <div class="box blue-light ">
                             <i class="fas fa-head-side-mask"></i>
-                            <p>"It was imperative that I go on vacation. I just wore two masks and prayed for the best."</p>
+                            <p class="quote">"It was imperative that I go on vacation. I just wore two masks and prayed for the best."</p>
                         </div>
-                        <div class="quote blue-light ">
+                        <div class="box blue-light ">
                             <i class="fas fa-car-side"></i>
-                            <p>"I intentionally rented a car rather than going some other way, for safety reasons."</p>
+                            <p class="quote">"I intentionally rented a car rather than going some other way, for safety reasons."</p>
                         </div>
                 </div>
                 <div class="row">
@@ -295,8 +307,14 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/sophie-user-persona.png" alt="User persona of Sophie">
-                        <figcaption>User persona for Sophie, a safety-conscious 31-year old woman who desperately wants to plan a plane trip to visit her family on the West Coast.</figcaption>
+                        <h2>User Persona</h2>
+                        <img src="images/sophie-user-persona.png" 
+                        alt="User persona for SafeTrips: Sophie Lopez"
+                         data-action="lumos"
+                         data-lumos-src="images/sophie-user-persona.png"
+                         data-lumos-caption="User persona for Sophie Lopez, a safety-conscious 31-year old woman who desperately wants to plan a plane trip to visit her family on the West Coast."
+                         />
+                        <figcaption>User persona for Sophie Lopez, a safety-conscious 31-year old woman who desperately wants to plan a cross-country trip to visit her family on the West Coast.</figcaption>
                     </div>
                 </div>
             </div>
@@ -527,12 +545,24 @@
     </main>
     <?php include('../inc/footer.php');?>
 
+    <template id="lumos-template">
+            <div id="lumos-container">
+                <figure id="lumos-figure">
+                    <img src="" alt="" id="lumos-image">
+                    <figcaption id="lumos-caption"></figcaption> <!-- Optional: only if you want to use data-lumos-caption -->
+                </figure>
+            </div>
+        </template>
+
     <!--SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../mklb/js/mklb.js"></script>
+    <script src="../lumos/lumos.js"></script>
     <script src="../js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    
     <script src="../js/index.js"></script>
 </body>
 </html>
