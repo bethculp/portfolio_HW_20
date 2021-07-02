@@ -121,11 +121,10 @@
 // }
 
 @mixin body-text{
-        @include body-font-size();
-    
+    @include body-font-size();
 }
 
-@mixin btn{
+@mixin btn(){
     background:$red;
     color:$white;
     padding:$space-sm $space-md;
@@ -145,7 +144,7 @@
     }
 }
 
-@mixin layout($width){
+@mixin layout($width, $breakpoint:sm){
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -164,7 +163,8 @@
         }
     }
 
-    @include breakpoint(sm){
+    
+    @include breakpoint( $breakpoint ){
         & > *:not(img),
         & > *{
             width:calc(#{ $width }  - #{ $space-md });
