@@ -1,12 +1,12 @@
    
 <?php
-$homelink = 'portfolio_HW_20';
+$homelink = 'new';
 ?>
    
    <header>
         <div class="container">
             <div id="logo">
-                <a href="/<?php echo $homelink; ?>/index.html">
+                <a href="/<?php echo $homelink; ?>/">
                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 845.01 520.4" aria-labelledby="logoTitle logoDesc" role="img">
                         <title id="logoTitle">Beth Culp</title>
                         <desc id="logoDesc">Logo for UX/UI Designer Beth Culp</desc>
@@ -26,7 +26,7 @@ $homelink = 'portfolio_HW_20';
                             </a>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="/../<?php echo $homelink; ?>/safetrips/index.html">SafeTrips Mobile Prototype</a></li>
+                                <li><a class="dropdown-item" href="/../<?php echo $homelink; ?>/safetrips/">SafeTrips Mobile Prototype</a></li>
                                 <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                             </ul>

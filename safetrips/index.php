@@ -3,7 +3,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="../styles/reset.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../mklb/css/mklb.css" />
     <link rel="stylesheet" href="../lumos/lumos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/bc11ea228d.js" crossorigin="anonymous"></script>
@@ -92,8 +91,6 @@
                                 <a href="#research">
                                     <div class="circle">
                                         <div class="icon">
-                                            <?xml version="1.0" encoding="utf-8"?>
-                                            <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 506.81 497.82" style="enable-background:new 0 0 506.81 497.82;" xml:space="preserve">
                                             <path d="M177.97,350.32c16.96-12.01,28.1-31.75,28.1-54.08c0-36.54-29.74-66.27-66.27-66.27s-66.27,29.73-66.27,66.27
@@ -119,7 +116,6 @@
                                 <a href="#ideation">
                                     <div class="circle">
                                         <div class="icon">
-                                            <?xml version="1.0" encoding="utf-8"?>
                                             <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 506.81 497.82" style="enable-background:new 0 0 506.81 497.82;" xml:space="preserve">
@@ -162,7 +158,6 @@
                                 <a href="#prototyping">
                                     <div class="circle">
                                         <div class="icon">
-                                            <?xml version="1.0" encoding="utf-8"?>
                                             <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 506.81 497.82" style="enable-background:new 0 0 506.81 497.82;" xml:space="preserve">
@@ -190,7 +185,6 @@
                                 <a href="#testing">
                                     <div class="circle">
                                         <div class="icon">
-                                            <?xml version="1.0" encoding="utf-8"?>
                                             <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 506.81 497.82" style="enable-background:new 0 0 506.81 497.82;" xml:space="preserve">

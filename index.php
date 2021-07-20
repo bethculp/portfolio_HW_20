@@ -65,9 +65,9 @@
                 <h1>Projects</h1>
                 <article id="safetrips">
                     <div class="image">
-                        <a href="../<?php echo $homelink; ?>/safetrips/index.html">
-                            <img src="images/safetrips.jpg">
-                        </a>
+                    <a href="../<?php echo $homelink; ?>/safetrips/index.html">
+                        <img src="images/safetrips.jpg">
+                    </a>
                     </div>
                     <div class="content">
                         <h1><a href="../<?php echo $homelink; ?>/safetrips/index.html">SafeTrips</a></h1>
