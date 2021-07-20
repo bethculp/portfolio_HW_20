@@ -259,7 +259,7 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>How have the Covid-19 pandemic restrictions affected user's travel views and habits?</h2>
+                        <h2>How have the COVID-19 pandemic restrictions affected user's travel views and habits?</h2>
                         <h3>Through video chat, we interviewed 5 millennials who were accustomed to traveling before the pandemic.</h3>
                         <h3>Interview objectives:</h3>
                         <ul class="list">
@@ -327,7 +327,7 @@
                 </div>
             </div>
             <div class="container-lg">
-                <div class="boxes">
+                <!-- <div class="boxes">
                     <div class="box blue-light ">
                         <h2>User Insight</h2>
                         <p>A safety-conscious woman who misses her family needs to feel reassured the covid-related safety risks of traveling are minimal enough for her to book a cross-country trip, because she doesn’t want to become infected or infect others.</p>
@@ -337,7 +337,7 @@
                         <p>How might we give concerned travelers valid, current covid risk information for transportation services so that we can minimize their fears of traveling during and after the pandemic?</p>
                     </div>
                 
-                </div>
+                </div> -->
                 <div class="row"> 
                     <div class="col-md-6">
                         <img 
@@ -567,7 +567,7 @@
                                 <li>Explore how the app could be adapted for other safety issues after the pandemic has become less of a travel risk</li>
                             </ul>
 
-                            <a href="/about" class="btn" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">Explore the Prototype</a>
+                            <a class="btn" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">Explore the Prototype</a>
                         </div>
                     </div>
                 </div>

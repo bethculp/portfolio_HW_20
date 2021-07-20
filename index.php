@@ -62,7 +62,19 @@
         </section>
         <section class="work web">
             <div class="container">
-                <h1>Website and Applications</h1>
+                <h1>Projects</h1>
+                <article id="safetrips">
+                    <div class="image">
+                        <a href="../<?php echo $homelink; ?>/safetrips/index.html">
+                            <img src="images/safetrips.jpg">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h1><a href="../<?php echo $homelink; ?>/safetrips/index.html">SafeTrips</a></h1>
+                        <p>App prototype providing data-driven safety ratings of travel services based on verified safety protocols and traveler experiences</p>
+                        <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
+                    </div>
+                </article>
                 <article id="fdo">
                     <div class="image">
                         <img src="images/fdo-chart.png">
@@ -105,7 +117,7 @@
                 </article>
             </div>
         </section>
-        <section class="work mobile">
+        <!-- <section class="work mobile">
             <div class="container">
                 <h1>Mobile Prototypes</h1>
                 <article id="safetrips">
@@ -113,7 +125,7 @@
                         <img src="images/safetrips.jpg">
                     </div>
                     <div class="content">
-                        <h1><a href="#">SafeTrips</a></h1>
+                        <h1><a href="../<?php echo $homelink; ?>/safetrips/index.html">SafeTrips</a></h1>
                         <p>App prototype providing data-driven safety ratings of travel services based on verified safety protocols and traveler experiences</p>
                         <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
                     </div>
@@ -129,7 +141,7 @@
                     </div>
                 </article>
             </div>
-        </section>
+        </section> -->
     </main>
     <?php include('inc/footer.php');?>
 </body>
