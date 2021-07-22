@@ -25,7 +25,7 @@
                     <h1>UX/UI Product Designer</h1>
                     <h2>with over 10 years of experience producing accessible, creative and ethical solutions</h2>
                     <div class="buttons">
-                        <a href="/about" class="btn" aria-label="Learn more about Beth Culp">Learn more</a>
+                        <a href="<?php echo $homelink; ?>/about" class="btn" aria-label="Learn more about Beth Culp">Learn more</a>
                         <!-- <a href="/resume" class="btn">Resume</a> -->
                     </div>
                 </div>
@@ -61,9 +61,9 @@
                 <!-- <a href="/about" class="btn" aria-label="Learn more about my skills">Learn More</a> -->
             </div>
         </section>
-        <section class="work web">
+        <section class="work web" id="work">
             <div class="container">
-                <h1>Projects</h1>
+                <h1>My Work</h1>
                 <article id="safetrips">
                     <div class="image">
                     <a href="../<?php echo $homelink; ?>/safetrips/index.html">

@@ -59,7 +59,7 @@
             <div class="container-lg">
                 <div class="row d-flex align-items-center py-3 py-md-4">
                     
-                    <div class="col-sm-7">
+                    <div class="col-md-7">
                         <h2>Project Overview</h2>
 
                         <h3>The Problem</h3>
@@ -72,7 +72,7 @@
                         <p>I dove head first into the user research for this project, which was an exciting challenge. I wanted to create something that spoke to our unique time in history, when the entire world was living in new circumstances due to the pandemic. This made for interesting interviews and conversations about how to approach the research with my partner. I also was new to Figma, and this project deepened my knowledge of how the functionality overlaps and differs from XD.</p>
 
                     </div>
-                    <div class="col-sm-5">
+                    <div class="col-md-5 d-none d-md-block">
                         <img src="images/cover-photo.jpg">
                     </div>
                 </div>
@@ -542,7 +542,7 @@
         <section class="conclusion blue">
             <div class="container-lg">
                 <div class="row d-flex align-items-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4 text-center">
 
                         <div class="image wow animate__animated animate__fadeInLeft">
                             <a title="View Mid-Fidelity Prototype" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">

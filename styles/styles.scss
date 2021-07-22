@@ -138,11 +138,11 @@ figcaption{
 
 *[class*='container']{
     margin:0 auto;
-    padding:$space-lg;
+    padding:$space-xl $space-lg;
     @include breakpoint(sm){
         padding:$space-xl;
     }
-    @include breakpoint(md){
+    @include breakpoint(lg){
         padding:$space-xxl $space-xl;
     }
     h1:first-of-type{
@@ -177,15 +177,16 @@ div[class*='col-sm-']{
 /*HEADER*/
 header{
     border-bottom:$blue-border; 
-    .container{
-        display:flex;
-        align-items:center;
+    .container-fluid{
         padding:$space-sm $space-lg;
     }
     #logo{
-        width:30%;
+        width:5rem;
         @include breakpoint(sm){
-            width:12%;
+            width:6.5rem;
+        }
+        @include breakpoint(md){
+            width:8rem;
         }
         svg{
             fill:$red;
@@ -195,21 +196,41 @@ header{
             }
         }
     }
-    nav{
-        margin-left:auto;
-        display:flex;
-        justify-content: space-between;
-        a{
-            @include heading-sm;
-            font-family:$primary-font;
-        }
-        li{
-            @include breakpoint(md){
-                + li{
-                    margin-left:$space-lg;
-                }
+    .navbar-light {
+        .navbar-nav .nav-link{
+            color:$red;
+            &:hover{
+                color:$blue;
             }
         }
+        .navbar-toggler{
+            border:none;
+            color:$red;
+            .fas{
+                font-size:150%;
+            }
+        }
+        .navbar-toggler-icon{
+            background-image: none;
+        }
+    }
+    .navbar-nav{
+        // @include breakpoint(md){
+        //     justify-content: space-between;
+        //     align-items:flex-end;
+        // }
+        a{
+            
+            @include md-font-size;
+            font-family:$primary-font;
+            @include breakpoint(md){
+                + a{
+                    margin-left:$space-lg;
+                }
+                @include heading-sm;
+            }
+        }
+    
     }
     /*MOBILE NAV*/
 
@@ -251,23 +272,42 @@ section.hero{
         * + *{
             margin-left:$space-md;
         }
-        @include breakpoint(md){
+        @include breakpoint(sm){
             justify-content: flex-start;
         }
     }
     .image{
-        display:none;
         text-align: center;
-        @include breakpoint(md){
-            display:block;
-        } 
+        img{
+            max-width:100%;
+            margin:0 auto;
+        }
+        // @include breakpoint(md){
+        //     display:block;
+        // } 
         
     }
     &.home{
         h1 + h2{
             margin-top:0;
         }
-    
+        .content{
+            margin-top:0;
+        }
+        .image{
+            display:none;
+            @include breakpoint(sm){
+                display:block;
+            }    
+        }
+    }
+    &.about{
+        .image{
+            img{
+                width:100%;
+                max-width:420px;
+            }
+        }
     }
     &.case-study{
         h1{
@@ -297,7 +337,7 @@ section.skills,
 section.work{
     *[class*='container'] > h1{
         text-align:center;
-        @include heading-lg;
+        @include heading-xl;
         @include breakpoint(md){
             padding-bottom:$space-lg;
         }
@@ -317,6 +357,12 @@ section.skills{
         grid-template-rows: repeat(4, auto);
         gap: $space-xl;
         transition:all .5s ease;
+        @include breakpoint(md){
+            row-gap: $space-lg;
+        }
+        @include breakpoint(xl){
+            gap: $space-xl;
+        }
     }
     .skill{
         display:block;
@@ -391,7 +437,7 @@ section.skills{
 section.work{
     border-bottom: $blue-border;
     article{
-        @include layout(50%);
+        @include layout(50%, md);
         margin-top:$space-xl;
         padding-bottom:$space-xl;
         h1{
@@ -411,13 +457,7 @@ section.work{
         .content{
             * + *{
                 margin-top:$space-lg;
-            }
-            padding-top:$space-md;
-            margin-bottom:$space-md;
-            @include breakpoint(md){
-                padding-top:0;
-            }
-        }
+            }        }
         @include breakpoint(md){
             &:nth-of-type(2n){
                 & > *:first-child{

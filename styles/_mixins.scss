@@ -110,15 +110,17 @@
     @include breakpoint(xl){
         @include sm-font-size();
     }
-    
 }
 
-// @mixin heading-xs{
-//     @include body-font-size();
-//     @include breakpoint(lg){
-//         @include xs-font-size();
-//     }
-// }
+@mixin nav-size{
+    @include xl-font-size();
+    @include breakpoint(lg){
+        @include md-font-size();
+    }
+    @include breakpoint(xl){
+        @include lg-font-size();
+    }
+}
 
 @mixin body-text{
     @include body-font-size();
