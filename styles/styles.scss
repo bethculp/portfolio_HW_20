@@ -233,12 +233,16 @@ section.hero{
     h3{
         @include heading-sm;
     }
-    p{
+    ul li{
+        margin-bottom:$space-md;
+    }
+    p.callout{
         @include heading-lg;
         font-family: $primary-font;
     }
-    ul li{
-        margin-bottom:$space-md;
+    p.callout-md{
+        @include heading-md;
+        font-family: $primary-font;
     }
     .buttons{
         margin-top:$space-md;
@@ -258,6 +262,33 @@ section.hero{
             display:block;
         } 
         
+    }
+    &.home{
+        h1 + h2{
+            margin-top:0;
+        }
+    
+    }
+    &.case-study{
+        h1{
+            font-weight:600;
+        }
+        ul.details{
+            &:before{
+                content:"";
+                display:block;
+                height:4px;
+                width:$space-xxl;
+                background-color:$blue;
+                margin:$space-lg 0;
+            }
+            li{
+                h3{
+                    font-weight:$font-bold;
+                    @include heading-sm;
+                }
+            }
+        }
     }
 }
 
@@ -448,59 +479,6 @@ footer{
           + li{
               margin-left:$space-lg;
           }
-        }
-    }
-}
-
-/*CASE STUDY*/
-// .gridImageArea{
-//     display:grid;
-//     min-height: 500px;
-//     height: 70vh;
-//     grid-template-rows: 75% 25%;
-//     grid-template-columns: 75% 25%;
-//     grid-template-areas:
-//     "photo photo"
-//     "photo mockup";
-
-//   .photo {
-//     grid-area: photo;
-//     background-image: url("../images/safetrips/cover-photo.jpg");
-//   }
-  
-//   .mockup {
-//     grid-area: mockup;
-//     background-image: url("../images/safetrips/mobile-airline-info.png");
-//   }
-
-//   .gridImage{
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//         align-items: center;
-//         display: flex;
-//         position: relative;
-//   }
-// }
-
-section.hero.case-study{
-    h1{
-        font-weight:600;
-    }
-    ul.details{
-        &:before{
-            content:"";
-            display:block;
-            height:4px;
-            width:$space-xxl;
-            background-color:$blue;
-            margin:$space-lg 0;
-        }
-        li{
-            h3{
-                font-weight:$font-bold;
-                @include heading-sm;
-            }
         }
     }
 }

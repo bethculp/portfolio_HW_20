@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="styles/reset.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
@@ -14,14 +15,14 @@
     <?php include('inc/header.php');?>
     <main>
         
-        <section class="hero">
+        <section class="hero home">
             <div class="container">
                 <div class="image wow animate__animated animate__rotateInDownLeft animate__fadeIn ">
                     <img class="" src="images/wiggles.png">
                 </div>
                 <div class="content animate__animated animate__fadeInRight">
-                    <p>Hi, I'm Beth</p>
-                    <h1>UX/UI Designer</h1>
+                    <p class="callout">Hi, I'm Beth</p>
+                    <h1>UX/UI Product Designer</h1>
                     <h2>with over 10 years of experience producing accessible, creative and ethical solutions</h2>
                     <div class="buttons">
                         <a href="/about" class="btn" aria-label="Learn more about Beth Culp">Learn more</a>

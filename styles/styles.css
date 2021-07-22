@@ -283,20 +283,32 @@ section.hero {
       section.hero h3 {
         font-size: 1.777rem;
         line-height: 2.5rem; } }
-  section.hero p {
+  section.hero ul li {
+    margin-bottom: 1rem; }
+  section.hero p.callout {
     font-size: 1.777rem;
     line-height: 2.5rem;
     font-family: "Oswald", sans-serif; }
     @media (min-width: 992px) {
-      section.hero p {
+      section.hero p.callout {
         font-size: 2.369rem;
         line-height: 3rem; } }
     @media (min-width: 1200px) {
-      section.hero p {
+      section.hero p.callout {
         font-size: 3.157rem;
         line-height: 4rem; } }
-  section.hero ul li {
-    margin-bottom: 1rem; }
+  section.hero p.callout-md {
+    font-size: 1.333rem;
+    line-height: 1.5rem;
+    font-family: "Oswald", sans-serif; }
+    @media (min-width: 992px) {
+      section.hero p.callout-md {
+        font-size: 1.777rem;
+        line-height: 2.5rem; } }
+    @media (min-width: 1200px) {
+      section.hero p.callout-md {
+        font-size: 2.369rem;
+        line-height: 3rem; } }
   section.hero .buttons {
     margin-top: 1rem;
     display: flex;
@@ -312,6 +324,25 @@ section.hero {
     @media (min-width: 768px) {
       section.hero .image {
         display: block; } }
+  section.hero.home h1 + h2 {
+    margin-top: 0; }
+  section.hero.case-study h1 {
+    font-weight: 600; }
+  section.hero.case-study ul.details:before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 6rem;
+    background-color: #0177BF;
+    margin: 1.5rem 0; }
+  section.hero.case-study ul.details li h3 {
+    font-weight: 500;
+    font-size: 1.333rem;
+    line-height: 1.5rem; }
+    @media (min-width: 1200px) {
+      section.hero.case-study ul.details li h3 {
+        font-size: 1.777rem;
+        line-height: 2.5rem; } }
 
 /*HOMEPAGE*/
 section.skills *[class*='container'] > h1,
@@ -504,25 +535,6 @@ footer {
           line-height: 2.5rem; } }
       footer ul li + li {
         margin-left: 1.5rem; }
-
-/*CASE STUDY*/
-section.hero.case-study h1 {
-  font-weight: 600; }
-section.hero.case-study ul.details:before {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 6rem;
-  background-color: #0177BF;
-  margin: 1.5rem 0; }
-section.hero.case-study ul.details li h3 {
-  font-weight: 500;
-  font-size: 1.333rem;
-  line-height: 1.5rem; }
-  @media (min-width: 1200px) {
-    section.hero.case-study ul.details li h3 {
-      font-size: 1.777rem;
-      line-height: 2.5rem; } }
 
 section .row + .row {
   margin-top: 3rem; }

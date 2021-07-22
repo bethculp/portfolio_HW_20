@@ -32,7 +32,7 @@ $homelink = 'new';
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="../about">About</a>
+                            <a href="/../<?php echo $homelink; ?>/about">About</a>
                         </li>
                         <li class="nav-item">
                             <a href="../resume">Resume</a>
