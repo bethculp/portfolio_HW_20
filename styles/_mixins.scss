@@ -77,7 +77,7 @@
 
 @mixin heading-xl{
     @include md-font-size();
-    @include breakpoint(lg){
+    @include breakpoint(md){
         @include lg-font-size();
     }
     @include breakpoint(xl){
@@ -87,7 +87,7 @@
 
 @mixin heading-lg{
     @include sm-font-size();
-    @include breakpoint(lg){
+    @include breakpoint(md){
         @include md-font-size();
     }
     @include breakpoint(xl){
@@ -96,10 +96,7 @@
 }
 
 @mixin heading-md{
-    @include xs-font-size();
-    @include breakpoint(lg){
-        @include sm-font-size();
-    }
+    @include sm-font-size();
     @include breakpoint(xl){
         @include md-font-size();
     }

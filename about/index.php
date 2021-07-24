@@ -32,7 +32,7 @@
 
                             <p class="callout-md">Design is never done - it’s a living thing, just like us.</p>
 
-                            <p>Most recently, I worked at a large nonprofit as a UX Designer/Front-end Web Developer. I was lead designer on many different internal and externally funded projects, from ideation and research to design and coding. I was heavily involved in <a href="#">developing and implementing our new branding from an organization merger</a>, including <a href="#">rebranding and updating our highest-earning revenue application</a>. </p>
+                            <p>Most recently, I worked at a large nonprofit as a UX Designer/Front-end Web Developer. I was lead designer on many different internal and externally funded projects, from ideation and research to design and coding. I was heavily involved in <a href="#">developing and implementing new branding from an organization merger</a>, including <a href="#">rebranding and updating their highest-earning revenue application</a>. </p>
 
                             <p>For my next opportunity, I want to continue to work within <strong>design systems and development</strong> teams, be heavily involved in <strong>analyzing research and ideating solutions</strong>, and lend my unique perspective and experience to improve the <strong>designs and efficiency</strong> of my team. I am planning to relocate to the West Coast (or nearby) this fall, and looking for an organization that values curiosity, innovation, and collaboration.</p>
 
@@ -41,50 +41,56 @@
                 </div>
             </div>
         </section>
-        <section class="blue">
-            <div class="about-skills container">
-                <div>
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>User Interface (UI) Design</li>
-                        <li>User Experience (UX) Design</li>
-                        <li>Accessiblity (WCAG)</li>
-                        <li>Design Systems</li>
-                        <li>Wireframing</li>
-                        <li>Prototyping</li>
-                        <li>User Research</li>
-                        <li>Usability Testing</li>
-                        <li>Interaction Design</li>
-                        <li>Information Architecture</li>
-                        <li>Branding</li>
-                        <li>Graphic Design</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Tools</h2>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Adobe XD</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Adobe Photoshop</li>
-                        <li>Wordpress</li>
-                        <li>Invision</li>
-                        <li>JIRA</li>
-                        <li>EZPublish</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Languages</h2>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>SCSS</li>
-                        <li>PHP</li>
-                        <li>Javascript</li>
-                        <li>Bootstrap</li>
-                        <li>Git</li>
-                        <li>Agile Methodology</li>
-                    </ul>
+        <section id="about-skills" class="blue">
+            <div class="container-lg">
+                <div class="row d-flex align-items-start">
+                    <div class="col-md-6">
+                        <h2>Skills</h2>
+                        <ul class="skills">
+                            <li>User Interface (UI) Design</li>
+                            <li>User Experience (UX) Design</li>
+                            <li>Accessiblity (WCAG)</li>
+                            <li>Design Systems</li>
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>User Research</li>
+                            <li>Usability Testing</li>
+                            <li>Interaction Design</li>
+                            <li>Information Architecture</li>
+                            <li>Branding</li>
+                            <li>Graphic Design</li>
+                            <li>Collaboration</li>
+                            <li>Project Management</li>
+                            <li>Employee Training</li>
+                            <li>Design Thinking</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>Tools</h2>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Wordpress</li>
+                            <li>Invision</li>
+                            <li>JIRA</li>
+                            <li>EZPublish</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>SCSS</li>
+                            <li>PHP</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>Git</li>
+                            <li>Agile Methodology</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

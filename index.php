@@ -66,12 +66,13 @@
                 <h1>My Work</h1>
                 <article id="safetrips">
                     <div class="image">
-                    <a href="../<?php echo $homelink; ?>/safetrips/index.html">
+                    <a href="<?php echo $homelink; ?>/safetrips/">
                         <img src="images/safetrips.jpg">
                     </a>
                     </div>
                     <div class="content">
-                        <h1><a href="../<?php echo $homelink; ?>/safetrips/index.html">SafeTrips</a></h1>
+                        <p class="type">Mobile Prototype</p>
+                        <h1><a href="<?php echo $homelink; ?>/safetrips/">SafeTrips</a></h1>
                         <p>App prototype providing data-driven safety ratings of travel services based on verified safety protocols and traveler experiences</p>
                         <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
                     </div>
@@ -81,12 +82,13 @@
                         <img src="images/fdo-chart.png">
                     </div>
                     <div class="content">
+                        <p class="type">Web Application Redesign</p>
                         <h1><a href="#">Foundation Directory</a></h1>
                         <p>Refreshing the user experience of large nonprofit prospecting application by applying organizational-wide branding and re-imagining the underperforming features of the application.</p>
                         <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing, Project Management</p>
                     </div>
                 </article>
-                <article id="doi">
+                <!-- <article id="doi">
                     <div class="image">
                         <img src="images/doi.png">
                     </div>
@@ -95,12 +97,13 @@
                         <p>Assessment and testing of the current website, prototyping a redesigned homepage and navigation for better comprehension of the department as a whole.</p>
                         <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
                     </div>
-                </article>
+                </article> -->
                 <article id="native">
                     <div class="image">
                         <img src="images/native-communities.png">
                     </div>
                     <div class="content">
+                        <p class="type">Website Design and Development</p>
                         <h1><a href="#">Investing in Native Communities</a></h1>
                         <p>Designing and building responsive web portal showcasing history, resources, news, and philanthropic funding for Native causes, with branding reflecting authentic Native culture.</p>
                         <p class="tags">UX/UI Design, Interaction Design, Prototyping, Front-end development</p>
@@ -111,6 +114,7 @@
                         <img src="images/candid-learning.png">
                     </div>
                     <div class="content">
+                        <p class="type">Design System and Rebranding</p>
                         <h1><a href="#">Candid Learning</a></h1>
                         <p>Led front-end development on redesign of highly-trafficked nonprofit training and resources hub, hosted on custom Wordpress theme.</p>
                         <p class="tags">Interaction Design, Front-end development, Project Management</p>

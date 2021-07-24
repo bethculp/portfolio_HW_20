@@ -443,9 +443,12 @@ section.work{
         h1{
             @include heading-lg;
         }
+        p.type{
+            @include heading-sm; 
+            font-family: $primary-font;
+        }
         img{
             border:1px solid $text-color;
-            cursor:pointer;
             transition:transform .5s ease, box-shadow .5s ease;
             &:hover{
                 transform: scale(1.02);
@@ -456,7 +459,7 @@ section.work{
         }
         .content{
             * + *{
-                margin-top:$space-lg;
+                margin-top:$space-md;
             }        }
         @include breakpoint(md){
             &:nth-of-type(2n){
@@ -467,6 +470,14 @@ section.work{
         }
     }
 }
+
+/*ABOUT*/
+section#about-skills{
+    ul.skills{
+        column-count: 2;
+    }
+}
+
 
 /*FOOTER*/
 footer{
@@ -680,6 +691,18 @@ section.process{
     }
     img{
         border:1px solid $black;
+        + img{
+            margin-top:$space-lg;
+        }
+        &.no-border{
+            border:none;
+        }
+    }
+}
+
+section.artifacts{
+    + section{
+        border-top:1px solid $blue;
     }
 }
 

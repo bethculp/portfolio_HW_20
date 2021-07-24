@@ -49,7 +49,8 @@
                                     Miro, Figma, Adobe XD, Flowmapp, Zoom, Otter, Google
                                 </li>   
                             </ul>
-            
+                            <a class="btn" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">Explore the Prototype</a>
+
                         </div>
                     </div>
                 </div>

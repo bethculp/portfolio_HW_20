@@ -42,7 +42,7 @@ h4 {
 h1 {
   font-size: 2.369rem;
   line-height: 3rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     h1 {
       font-size: 3.157rem;
       line-height: 4rem; } }
@@ -54,7 +54,7 @@ h1 {
 h2 {
   font-size: 1.777rem;
   line-height: 2.5rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     h2 {
       font-size: 2.369rem;
       line-height: 3rem; } }
@@ -64,12 +64,8 @@ h2 {
       line-height: 4rem; } }
 
 h3 {
-  font-size: 1.333rem;
-  line-height: 1.5rem; }
-  @media (min-width: 992px) {
-    h3 {
-      font-size: 1.777rem;
-      line-height: 2.5rem; } }
+  font-size: 1.777rem;
+  line-height: 2.5rem; }
   @media (min-width: 1200px) {
     h3 {
       font-size: 2.369rem;
@@ -277,12 +273,8 @@ section.hero {
       section.hero .container > *:first-child {
         text-align: center; } }
   section.hero h2 {
-    font-size: 1.333rem;
-    line-height: 1.5rem; }
-    @media (min-width: 992px) {
-      section.hero h2 {
-        font-size: 1.777rem;
-        line-height: 2.5rem; } }
+    font-size: 1.777rem;
+    line-height: 2.5rem; }
     @media (min-width: 1200px) {
       section.hero h2 {
         font-size: 2.369rem;
@@ -300,7 +292,7 @@ section.hero {
     font-size: 1.777rem;
     line-height: 2.5rem;
     font-family: "Oswald", sans-serif; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       section.hero p.callout {
         font-size: 2.369rem;
         line-height: 3rem; } }
@@ -309,13 +301,9 @@ section.hero {
         font-size: 3.157rem;
         line-height: 4rem; } }
   section.hero p.callout-md {
-    font-size: 1.333rem;
-    line-height: 1.5rem;
+    font-size: 1.777rem;
+    line-height: 2.5rem;
     font-family: "Oswald", sans-serif; }
-    @media (min-width: 992px) {
-      section.hero p.callout-md {
-        font-size: 1.777rem;
-        line-height: 2.5rem; } }
     @media (min-width: 1200px) {
       section.hero p.callout-md {
         font-size: 2.369rem;
@@ -370,7 +358,7 @@ section.work *[class*='container'] > h1 {
   text-align: center;
   font-size: 2.369rem;
   line-height: 3rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     section.skills *[class*='container'] > h1,
     section.work *[class*='container'] > h1 {
       font-size: 3.157rem;
@@ -386,14 +374,10 @@ section.work *[class*='container'] > h1 {
       padding-bottom: 1.5rem; } }
 
 section.skills h2 {
-  font-size: 1.333rem;
-  line-height: 1.5rem;
+  font-size: 1.777rem;
+  line-height: 2.5rem;
   padding-bottom: 0.5rem;
   text-align: center; }
-  @media (min-width: 992px) {
-    section.skills h2 {
-      font-size: 1.777rem;
-      line-height: 2.5rem; } }
   @media (min-width: 1200px) {
     section.skills h2 {
       font-size: 2.369rem;
@@ -466,7 +450,7 @@ section.work {
     section.work article h1 {
       font-size: 1.777rem;
       line-height: 2.5rem; }
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         section.work article h1 {
           font-size: 2.369rem;
           line-height: 3rem; } }
@@ -474,19 +458,30 @@ section.work {
         section.work article h1 {
           font-size: 3.157rem;
           line-height: 4rem; } }
+    section.work article p.type {
+      font-size: 1.333rem;
+      line-height: 1.5rem;
+      font-family: "Oswald", sans-serif; }
+      @media (min-width: 1200px) {
+        section.work article p.type {
+          font-size: 1.777rem;
+          line-height: 2.5rem; } }
     section.work article img {
       border: 1px solid #1a1a1a;
-      cursor: pointer;
       transition: transform .5s ease, box-shadow .5s ease; }
       section.work article img:hover {
         transform: scale(1.02); }
     section.work article .tags {
       font-weight: 500; }
     section.work article .content * + * {
-      margin-top: 1.5rem; }
+      margin-top: 1rem; }
     @media (min-width: 768px) {
       section.work article:nth-of-type(2n) > *:first-child {
         order: 1; } }
+
+/*ABOUT*/
+section#about-skills ul.skills {
+  column-count: 2; }
 
 /*FOOTER*/
 footer {
@@ -524,7 +519,7 @@ footer {
   footer h1 {
     font-size: 1.777rem;
     line-height: 2.5rem; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       footer h1 {
         font-size: 2.369rem;
         line-height: 3rem; } }
@@ -533,12 +528,8 @@ footer {
         font-size: 3.157rem;
         line-height: 4rem; } }
   footer h2 {
-    font-size: 1.333rem;
-    line-height: 1.5rem; }
-    @media (min-width: 992px) {
-      footer h2 {
-        font-size: 1.777rem;
-        line-height: 2.5rem; } }
+    font-size: 1.777rem;
+    line-height: 2.5rem; }
     @media (min-width: 1200px) {
       footer h2 {
         font-size: 2.369rem;
@@ -676,13 +667,9 @@ section .middle-heading.row {
     padding-top: 3rem; }
 
 section.process h2 {
-  font-size: 1.333rem;
-  line-height: 1.5rem;
+  font-size: 1.777rem;
+  line-height: 2.5rem;
   font-weight: 500; }
-  @media (min-width: 992px) {
-    section.process h2 {
-      font-size: 1.777rem;
-      line-height: 2.5rem; } }
   @media (min-width: 1200px) {
     section.process h2 {
       font-size: 2.369rem;
@@ -696,6 +683,13 @@ section.process h3 {
       line-height: 2.5rem; } }
 section.process img {
   border: 1px solid #000; }
+  section.process img + img {
+    margin-top: 1.5rem; }
+  section.process img.no-border {
+    border: none; }
+
+section.artifacts + section {
+  border-top: 1px solid #0177BF; }
 
 .key-findings ul {
   padding-left: 2rem; }
