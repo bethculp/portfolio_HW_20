@@ -3,6 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Investing in Native Communities | Beth Culp - UX/UI Designer">
+    <meta property="og:url" content="https://bethculp.com/native-communities/">
+    <meta property="og:image" content="https://bethculp.com/native-communities/images/og-image.jpg">
+    <meta property="og:site_name" content="Beth Culp - UX/UI Designer">
+    <meta property="og:description" content="Web design and development of portal to increase philanthropic funding for Native Communities">
     <link href="../styles/reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../lumos/lumos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
@@ -12,7 +18,7 @@
     <link href="../styles/styles.css" rel="stylesheet" type="text/css">
     
     
-    <title>Investing in Native communities | Beth Culp</title>
+    <title>Investing in Native Communities | Beth Culp</title>
 </head>
 <body>
     <?php include('../inc/header.php');?>
@@ -22,10 +28,8 @@
                 <div class="row d-flex ">
                     <div class="col-md-4">
                         <div class="image wow animate__animated animate__fadeInLeft">
-                            <a title="View Website" target="_blank" href="nativephilanthropy.candid.org/">
                             <img src="images/designs/homepage.jpg"
                                 alt="Design of the homepage">
-                            </a>
                         </div>
                     </div>
                     <div class="col-md-8">

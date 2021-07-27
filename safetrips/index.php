@@ -3,6 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SafeTrips Case Study | Beth Culp - UX/UI Designer">
+    <meta property="og:url" content="https://bethculp.com/safetrips/">
+    <meta property="og:image" content="https://bethculp.com/safetrips/images/og-image.jpg">
+    <meta property="og:site_name" content="Beth Culp - UX/UI Designer">
+    <meta property="og:description" content="Case study of UX research and design for mobile travel application during COVID-19 pandemic">
     <link href="../styles/reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../lumos/lumos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 

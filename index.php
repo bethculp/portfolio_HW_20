@@ -3,6 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Beth Culp - UX/UI Designer">
+    <meta property="og:url" content="https://bethculp.com">
+    <meta property="og:image" content="https://bethculp.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Beth Culp - UX/UI Designer">
+    <meta property="og:description" content="Portfolio of web design and development, mobile app prototypes">
+
     <link href="styles/reset.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/bc11ea228d.js" crossorigin="anonymous"></script>
@@ -92,7 +99,7 @@
                 </article>
                 
                 
-                <!-- <article id="candid">
+                <article id="candid">
                     <div class="image">
                         <a href="<?php echo $homelink; ?>/candid/">
                             <img src="images/mockups/candid-mockup2.jpg">
@@ -105,7 +112,7 @@
                         <p class="tags">UI Design, Information Architecture, Front-end development, Project Management</p>
                     </div>
                 </article>
-                <article id="refresh-culture">
+                <!--<article id="refresh-culture">
                     <div class="image">
                         <img src="images/mockups/refresh-culture-mockup.jpg">
                     </div>

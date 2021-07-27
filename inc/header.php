@@ -1,6 +1,6 @@
    
 <?php
-$homelink = 'http://192.168.64.2/portfolio_HW_20';
+$homelink = 'https://bethculp.com';
 ?>
    
    <header>

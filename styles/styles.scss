@@ -98,6 +98,9 @@ h1, h2, h3{
 figcaption{
     @include body-small-font-size;
     padding-top:$space-sm;
+    + img{
+        margin-top:$space-lg;
+    }
 }
 
 .quote{
@@ -151,6 +154,16 @@ figcaption{
     > *:first-child{
         margin-top:0;
     }
+}
+
+div[class*='col-lg-']{
+    + div[class*='col-lg']{
+        margin-top:$space-md;
+        @include breakpoint(lg){
+            margin-top:0;
+        }
+    }
+    
 }
 
 div[class*='col-md-']{
@@ -311,7 +324,7 @@ section.hero{
     }
     &.case-study{
         h1{
-            font-weight:600;
+            font-weight:500;
         }
         ul.details{
             &:before{
@@ -478,8 +491,23 @@ section.work{
 /*ABOUT*/
 section#about-skills{
     ul.skills{
-        column-count: 2;
+        
+        @include breakpoint(sm){
+            column-count: 2;
+        }
     }
+    div[class*='col-sm-']{
+        + div[class*='col-sm']{
+            @include breakpoint(sm){
+                margin-top:$space-md;
+            }
+            @include breakpoint(md){
+                margin-top:0;
+            }
+        }
+        
+    }
+    
 }
 
 
@@ -494,20 +522,20 @@ footer{
             background-size:auto 100%;
             background-repeat:no-repeat;
         }
-        > div:first-of-type{
-            background-image:url(../images/wiggle-left-bottom.png);
-            background-position:right bottom;
-            @include breakpoint(xxl){
-                background-position:left bottom;
-            }
-        }
-        > div:last-of-type{
-            background-image:url(../images/wiggle-right-bottom.png);
-            background-position:left bottom;
-            @include breakpoint(xxl){
-                background-position:right bottom;
-            }
-        }
+        // > div:first-of-type{
+        //     background-image:url(../images/wiggle-left-bottom.png);
+        //     background-position:right bottom;
+        //     @include breakpoint(xxl){
+        //         background-position:left bottom;
+        //     }
+        // }
+        // > div:last-of-type{
+        //     background-image:url(../images/wiggle-right-bottom.png);
+        //     background-position:left bottom;
+        //     @include breakpoint(xxl){
+        //         background-position:right bottom;
+        //     }
+        // }
     }
     
     .container{

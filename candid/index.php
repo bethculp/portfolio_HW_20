@@ -29,7 +29,7 @@
                     <div class="col-md-6">
                         <div class="content animate__animated animate__fadeInRight wow">
                             <h1>Candid Design System</h1>
-                            <h2>Adobe XD library of brand assets and components shared by Candid design team and consultants, translated from visual style guide</h2>
+                            <h2>Creation of shared Adobe XD library of reusable brand assets and components</h2>
                             <ul class="details">
                                 <li>
                                     <h3>My role</h3>
@@ -37,15 +37,15 @@
                                 </li>
                                 <li>
                                     <h3>Team</h3>
-                                    Beth Culp and Barsha Maharjan (UX Designer), Candid Design Team, Open Design Studio
+                                    Beth Culp and Barsha Maharjan (UX Designer)
                                 </li> 
                                 <li>
                                     <h3>Timeline</h3>
-                                    Ongoing from 2020
+                                    Ongoing from 2020 - May 2021
                                 </li> 
                                 <li>
                                     <h3>Tools</h3>
-                                    Adobe XD, Material Design System
+                                    Adobe XD, Material-UI
                                 </li>   
                             </ul>            
                         </div>
@@ -76,21 +76,107 @@
         <section class="artifacts process">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
+                        <h2>Launch of "How to Be Candid" in 2019</h2>
+                        <p>Everything started with our Candid Style Guide. Developed by <a href="http://notclosed.com/" target="_blank">Open Design Studio</a>, our in-house design team had ongoing conversations and input. 
+                        The style guide was invaluable in providing branding guidelines for the logo, typography, photography, writing style, and more. </p>
+
+                        <p>However, much of the initial style guide was aimed toward guidelines for print materials - there were still many patterns and rules we had to decide for user interfaces. The designers on the Candid design team started running with the process of rebranding our many web properties.</p>
+                    </div>
+                    <div class="col-md-6">
                         <img src="images/style-guide/logo.png"
                          alt="Screenshot of logo guidelines from the Candid Style Guide">
-                         <img src="images/style-guide/colors.png"
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/style-guide/colors.png"
                          alt="Screenshot of color swatches from the Candid Style Guide">
                     </div>
                     <div class="col-md-4">
-                        <img src="images/style-guide/typography.png"
+                    <img src="images/style-guide/typography.png"
                          alt="Screenshot of typography guidelines from the Candid Style Guide">
-                         <img src="images/style-guide/mockups.png"
-                         alt="Screenshot of example advertisements from the Candid Style Guide">
                     </div>
                     <div class="col-md-4">
-                        <h2>Candid Style Guide</h2>
-                        <p>Everything started with our Candid Style Guide. Developed by <a href="http://notclosed.com/" target="_blank">Open Design Studio</a>, with collaboration from the Candid in-house design team, the style guide outlined the branding guidelines for the logo, typography, photography, writing style, and more. While this guide served as our design bible as we undertook rebranding Candid's various properties, there were still many nuances and rules we had to decide for user interfaces. With continued converations with Open, the Candid design team started running with our new branding.</p>
+                        <img src="images/style-guide/mockups.png"
+                         alt="Screenshot of example advertisements from the Candid Style Guide">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="artifacts process">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Rebranding our Websites</h2>
+                        <p>Applying our branding to our various web properties was a daunting task. Foundation Center and Guidestar had about 10 primary properties, plus a myriad of individual products and client-funded portals. Most of these were built on different content management systems and frameworks - EZPublish, HubSpot, Wordpress, Angular.</p>
+
+                        <p>Many of these properties started being redesigned individually, on their own systems. One goal of the new Candid branding was to remove the differences in styles between the various properties. As the sites were being redesigned, it was clear the amount of similarities between the sites would be huge. There was an opportunity to eliminate development effort of redesigning by having one consistent stylesheet or system - one source of truth.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/sites/properties-list.jpg"
+                         alt="List of various properties hosted by Candid, in categories relevant to their purpose">
+                         <figcaption>A list of most (but not all) of the various products and websites that became part of Candid after the merger of Foundation Center and GuideStar.</figcaption>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Foundation Center</h3>
+                        <p>The Foundation Center website was redesigned to become <a href="https://candid.org" target="_blank">Candid.org</a>. Being part of the Candid design team, I was a source of feedback and innovation for how to reorganize the information architecture and implement the new branding onto the site. I took the lead on the front-end development for converting the current EZPublish styles and templates to support the new design.</p>
+                    </div>
+                    <div class="col-md-4">
+                    <img src="images/sites/fc-home.jpg"
+                         alt="Screenshot of FoundationCenter.org homepage">
+                         <figcaption>The previous Foundation Center homepage</figcaption>
+
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/sites/candid-home.jpg"
+                         alt="Screenshot of example advertisements from the Candid Style Guide">
+                         <figcaption>The new Candid.org homepage, iterated from the old Foundation Center website</figcaption>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>GuideStar</h3>
+                        <p>While <a href="https://guidestar.org" target="_blank">GuideStar.org</a> had become part of Candid, the name GuideStar would live on as it's own product. The GuideStar website and application were both given new styling to match the Candid brand.</p>
+                    </div>
+                    <div class="col-md-4">
+                    <img src="images/sites/gs-home-old.jpg"
+                         alt="Screenshot of FoundationCenter.org homepage">
+                         <figcaption>The previous GuideStar.org homepage</figcaption>
+
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/sites/gs-home.jpg"
+                         alt="Screenshot of example advertisements from the Candid Style Guide">
+                         <figcaption>The current GuideStar.org homepage after rebranding</figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="artifacts process blue">
+            <div class="container-lg">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <h1>Why did we need a design system?</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="list">
+                            <li>
+                                <h3>Different Programs</h3>
+                                Each designer was using their preferred program to create designs - Illustrator, XD, or Photoshop. Having a shared library would help us all design faster.</li>
+                            <li>
+                                <h3>Inconsistent Details</h3>
+                                While we all knew the style guide like the back of our hand, we didn't have clear rules for the minutia of user interface design - how much padding did a button get? Which font should be used for tabs? This led to slight inconsistencies in all of our designs.</li>
+                            <li>
+                                <h3>Developer Guesswork</h3>
+                                Since we had inconsistencies in our designs, the developers also had inconsistences when creating styles and were largely guessing on specific styles from the art files. This could be eliminated if we were able to give the developers a library to reference.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -99,79 +185,100 @@
         <section class="artifacts process">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-md-3">
-                        <img src="images/color-assets.png"
-                         alt="List of color assets from shared Adobe XD library">
+                    <div class="col-lg-4">
+                        <h2>Candid Components, version 1</h2>
+                        <p>I took the initiative to start researching and learning more about Adobe XD's design system functionality. I learned about the components feature, and started creating components of our most commonly used UI elements, with the states I had used and seen used by other members of the design team.</p>
                     </div>
-                    <div class="col-md-5">
-                        <img src="images/Color-palette.png"
-                         alt="Color palette displayed with annotations">
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Color Assets</h2>
-                        <p>While our Candid style guide supplied our brand colors, we had to translate these into reusable and definable assets in the Adobe XD library. We also added specific UI colors not defined in the style guide, including grays and error colors.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="artifacts process">
-            <div class="container-lg">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="images/character-styles.png"
-                         alt="List of character assets from shared Adobe XD library">
-                    </div>
-                    <div class="col-md-5">
-                        <img src="images/Typography.png"
-                         alt="Typography displayed with annotations">
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Character Styles</h2>
-                        <p>We used the two font families in the Candid Style Guide to create our character styles. We based our asset names on the default assets defined in Material-UI, a React framework that would be the basis for many of our rebranded web applications moving forward.</p>
+                    <div class="col-lg-8">
+                        <img src="images/components/buttons-v1.png"
+                         alt="Candid branded buttons, shown in different colors and typography">
+                         <figcaption>First version of the Button component, showing various known implementations from different designs.</figcaption>
+                         <img src="images/components/inputs-v1.png"
+                         alt="Candid branded text input shown with various labels and font sizes">
+                         <figcaption>First version of the Text input component, divided into groups based on matching the primary or secondary button input height.</figcaption>
+                         <img src="images/components/tabs-v1.png"
+                         alt="Candid branded tabs component, shown in a single tab and a group">
+                         <figcaption>First version of the Tabs component, which included the single Tab and the Tabs group, consisting of nested components.</figcaption>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="artifacts process">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/candid-buttons.png"
-                         alt="Various states of the Candid button component">
+                    <div class="col-lg-4">
+                        <h2>Material-UI Framework</h2>
+                        <p>One of our internal systems was being completely rebuilt using the React javascript framework. This presented an opportunity to implement our branding onto a pre-existing React design system  that could be reused by developers and other applications. </p>
+
+                        <p>After much internal discussion between designers, developers, and stakeholders, we decided to use the <a href="https://material-ui.com/" target="_blank">Material-UI</a> framework developed by Google for our underlying structure. We evaluated the existing Material-UI framework and started rebranding the components in Adobe XD.</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <img src="images/components/material-button.jpg"
+                         alt="Material-UI branded Button component">
+                         <figcaption>Material-UI default Button component</figcaption>
+                         
+                        <img src="images/components/candid-Button.png"
+                         alt="Candid branding put onto the Material-UI button component">
+                         <figcaption>Candid branding placed onto the existing Material-UI button component, adapted for additional states</figcaption>
                          
                     </div>
-                    <div class="col-md-4">
-                        <img src="images/candid-textarea.png"
-                         alt="Various states of the Candid textarea component">
-                        <img src="images/candid-checkbox.png"
-                         alt="Various states of the Candid checkbox component">
-                         <img src="images/candid-tooltip.png"
-                         alt="Various states of the Candid tooltip component">
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Components</h2>
-                        <p>Each component was based on the user interfaces and projects our team had worked on, combined with the Material-UI React framework. We created states for each component to better faciliate consistency between developers and designers. Having these reusable components available in a shared Adobe XD library greatly increased the efficiency and consistency of both the internal design team and our external consultants.</p>
-                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="artifacts process">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2>Candid Components, version 2</h2>
+                        <p>Having the Material-UI framework was extremely helpful in terms of organization, naming conventions, states, and overall seeing what a complete design system inventory looks like. However, the Adobe XD file we were working from was unfortunately very unwieldy. Having that many components and states in one file led it to be very slow and hard to collaborate on, leading me and my fellow developer constantly making copies of components and rebranding them in other files.</p>
+
+                        <p>I returned to my original Candid Design System file and chose to iterate on my existing components, using what I had learned from the Material-UI framework. I was able to focus on just the pre-existing components, which had been found to be most widely used by our design team.</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <img src="images/candid-design-system-screenshot.png"
+                        alt="Screenshot of Candid design file within Adobe XD">
+                        <figcaption>Screenshot of the Candid design system inside of Adobe XD</figcaption>
+                         
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/components/candid-textarea.png"
+                         alt="Various states of the Candid textarea component">
+                            <img src="images/components/candid-tooltip.png"
+                            alt="Various states of the Candid tooltip component">
+                            <img src="images/components/candid-checkbox.png"
+                         alt="Various states of the Candid checkbox component">
+                    </div>
+                    <div class="col-md-6">
+                    <img src="images/components/candid-buttons.png"
+                         alt="Various states of the Candid button component">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        
         <section class="conclusion blue">
             <div class="container-lg">
                 <div class="row d-flex align-items-center justify-content-center">
-                    <!-- <div class="col-md-6 text-center">
+                    <div class="col-md-6 text-center">
 
                         <div class="image wow animate__animated animate__fadeInLeft">
-                            <a title="View Mid-Fidelity Prototype" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">
-                                <img alt="Animated mockup of SafeTrips prototype app in an iPhone screen, showing airline details screen" src="images/SafeTrips-animated.gif">
-                            </a>
+                            
+                            <img src="images/design-system-mac.png"
+                            alt="The Candid design system shown on a Mac desktop computer">
                         </div>
-                    </div> -->
+                    </div>
                     <div class="col-md-6 text-center">
                         <div class="content animate__animated animate__fadeInRight">
                             <h2>Conclusion</h2>
-                            <p>The Investing in Native Americans website was a massive project that I was truly honored to work on. From design ideation, client communication, to graphic design, to coding, this truly was an all-encompassing project for an important cause. I enjoyed learning about Native causes and working with my fellow team members to bring this goal to life in the form of this interactive web portal. I hope to work on similar projects in the future.</p>
-
-                            <a class="btn" target="_blank" href="https://nativephilanthropy.candid.org/">View the Website</a>
+                            <p>This library was shared with the internal design team, as well as external design and development consultants. Having these reusable components available in a shared Adobe XD library has greatly increased the efficiency and consistency of Candid projects. It is a work in progress and will be added to by the design team moving forward - truly a living, breathing, design system! My obsession with detail and rules was truly at place here, and I would love to work on more design systems in the future.</p>
+                        
                         </div>
                     </div>
                 </div>

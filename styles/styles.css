@@ -130,6 +130,8 @@ figcaption {
   font-size: .825rem;
   line-height: 1rem;
   padding-top: 0.5rem; }
+  figcaption + img {
+    margin-top: 1.5rem; }
 
 .quote {
   font-size: 1.333rem;
@@ -188,6 +190,12 @@ figcaption {
     font-weight: 500; }
   *[class*='container'] > *:first-child {
     margin-top: 0; }
+
+div[class*='col-lg-'] + div[class*='col-lg'] {
+  margin-top: 1rem; }
+  @media (min-width: 992px) {
+    div[class*='col-lg-'] + div[class*='col-lg'] {
+      margin-top: 0; } }
 
 div[class*='col-md-'] + div[class*='col-md'] {
   margin-top: 1rem; }
@@ -335,7 +343,7 @@ section.hero {
     width: 100%;
     max-width: 420px; }
   section.hero.case-study h1 {
-    font-weight: 600; }
+    font-weight: 500; }
   section.hero.case-study ul.details:before {
     content: "";
     display: block;
@@ -480,8 +488,15 @@ section.work {
         order: 1; } }
 
 /*ABOUT*/
-section#about-skills ul.skills {
-  column-count: 2; }
+@media (min-width: 576px) {
+  section#about-skills ul.skills {
+    column-count: 2; } }
+@media (min-width: 576px) {
+  section#about-skills div[class*='col-sm-'] + div[class*='col-sm'] {
+    margin-top: 1rem; } }
+@media (min-width: 768px) {
+  section#about-skills div[class*='col-sm-'] + div[class*='col-sm'] {
+    margin-top: 0; } }
 
 /*FOOTER*/
 footer {
@@ -493,21 +508,7 @@ footer {
       footer .bg-image {
         display: block;
         background-size: auto 100%;
-        background-repeat: no-repeat; }
-      footer > div:first-of-type {
-        background-image: url(../images/wiggle-left-bottom.png);
-        background-position: right bottom; } }
-    @media (min-width: 576px) and (min-width: 1400px) {
-      footer > div:first-of-type {
-        background-position: left bottom; } }
-  @media (min-width: 576px) {
-      footer > div:last-of-type {
-        background-image: url(../images/wiggle-right-bottom.png);
-        background-position: left bottom; } }
-    @media (min-width: 576px) and (min-width: 1400px) {
-      footer > div:last-of-type {
-        background-position: right bottom; } }
-
+        background-repeat: no-repeat; } }
   footer .container {
     display: flex;
     flex-direction: column;
