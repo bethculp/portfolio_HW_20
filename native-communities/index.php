@@ -71,8 +71,8 @@
                         <h2>What I Learned</h2>
                         <p>I worked directly with our client through out this project, and learned a lot about how to communicate and negotiate on design ideas while making sure I understood and represented their perspective and experience. I aso learned an immense amount about Native culture while working on this project. I was extremely grateful to attend the Native Americans in Philanthropy 30th Annivery Summit for the official launch of the website, and was humbled to see the positive reactions to the portal and excitement over the national impact it would have for this cause.</p>
                     </div>
-                    <div class="col-md-5 d-none d-md-block">
-                        <img src="images/photos-top.png">
+                    <div class="col-md-5 text-center">
+                        <img src="images/native-timeline-desktop.png">
                     </div>
                 </div>
             </div>
@@ -177,18 +177,18 @@
         <section class="conclusion blue">
             <div class="container-lg">
                 <div class="row d-flex align-items-center justify-content-center">
-                    <!-- <div class="col-md-6 text-center">
+                    <div class="col-md-4 text-center">
 
                         <div class="image wow animate__animated animate__fadeInLeft">
-                            <a title="View Mid-Fidelity Prototype" target="_blank" href="https://www.figma.com/proto/ADsutBpAfzLNZijlX5l1jB/SafeTrips-IOS?node-id=6%3A95&viewport=62%2C1224%2C1&scaling=scale-down&hide-ui=1">
-                                <img alt="Animated mockup of SafeTrips prototype app in an iPhone screen, showing airline details screen" src="images/SafeTrips-animated.gif">
-                            </a>
+                            
+                                <img alt="" src="images/nap-iphone.png">
+                            
                         </div>
-                    </div> -->
-                    <div class="col-md-6 text-center">
+                    </div>
+                    <div class="col-md-8">
                         <div class="content animate__animated animate__fadeInRight">
                             <h2>Conclusion</h2>
-                            <p>The Investing in Native Americans website was a massive project that I was truly honored to work on. From design ideation, client communication, to graphic design, to coding, this truly was an all-encompassing project for an important cause. I enjoyed learning about Native causes and working with my fellow team members to bring this goal to life in the form of this interactive web portal. I hope to work on similar projects in the future.</p>
+                            <p>The Investing in Native Americans website was a massive project that I was truly honored to work on. From design ideation, client communication, graphic design, to coding, this truly was an all-encompassing project for an important cause. I enjoyed learning about Native culture issues and working with my fellow team members to bring this goal to life in the form of this interactive web portal. I hope to work on similar projects in the future.</p>
 
                             <a class="btn" target="_blank" href="https://nativephilanthropy.candid.org/">View the Website</a>
                         </div>

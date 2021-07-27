@@ -469,7 +469,11 @@ section.work{
             }
         }
     }
+    aside{
+
+    }
 }
+
 
 /*ABOUT*/
 section#about-skills{
@@ -530,6 +534,14 @@ footer{
           + li{
               margin-left:$space-lg;
           }
+        }
+    }
+    .credits{
+        p{
+            @include body-small-font-size;
+            + p{
+                margin-top:0; 
+            }
         }
     }
 }

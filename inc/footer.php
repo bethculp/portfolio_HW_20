@@ -8,6 +8,10 @@
                 <li><a href="/resume">Resume</a></li>
                 <li><a href="https://www.linkedin.com/in/bethculp/" target="_blank">LinkedIn</a></li>
             </ul>
+            <div class="credits">
+                <p>Icons by <a href="https://thenounproject.com/Becris/" target="_blank">Becris</a> from the Noun Project</p>
+                <p>Site created by Beth Culp</p>
+            </div>
         </div>
         <div class="bg-image"></div>
     </footer>

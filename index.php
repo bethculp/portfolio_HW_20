@@ -64,11 +64,24 @@
         <section class="work web" id="work">
             <div class="container">
                 <h1>My Work</h1>
+                <article id="native">
+                    <div class="image">
+                        <a href="<?php echo $homelink; ?>/native-communities/">
+                            <img src="images/mockups/nap-mockup.jpg">
+                        </a>
+                    </div>
+                    <div class="content"> 
+                        <p class="type">Website Design and Development</p>
+                        <h1><a href="<?php echo $homelink; ?>/native-communities/">Investing in Native Communities</a></h1>
+                        <p>Designing and building responsive web portal showcasing history, resources, news, and philanthropic funding for Native causes, with branding reflecting authentic Native culture.</p>
+                        <p class="tags">UX/UI Design, Interaction Design, Prototyping, Front-end development</p>
+                    </div>
+                </article>
                 <article id="safetrips">
                     <div class="image">
-                    <a href="<?php echo $homelink; ?>/safetrips/">
-                        <img src="images/safetrips.jpg">
-                    </a>
+                        <a href="<?php echo $homelink; ?>/safetrips/">
+                            <img src="images/mockups/safetrips-mockup.jpg">
+                        </a>
                     </div>
                     <div class="content">
                         <p class="type">Mobile Prototype</p>
@@ -77,7 +90,34 @@
                         <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
                     </div>
                 </article>
-                <article id="fdo">
+                
+                
+                <!-- <article id="candid">
+                    <div class="image">
+                        <a href="<?php echo $homelink; ?>/candid/">
+                            <img src="images/mockups/candid-mockup2.jpg">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <p class="type">Design System</p>
+                        <h1><a href="<?php echo $homelink; ?>/candid/">Candid Design System</a></h1>
+                        <p>Led creation of Adobe XD design system for new organization branding, for integration with Material UI React framework and other web properties.</p>
+                        <p class="tags">UI Design, Information Architecture, Front-end development, Project Management</p>
+                    </div>
+                </article>
+                <article id="refresh-culture">
+                    <div class="image">
+                        <img src="images/mockups/refresh-culture-mockup.jpg">
+                    </div>
+                    <div class="content">
+                        <p class="type">Mobile Prototype</p>
+                        <h1><a href="<?php echo $homelink; ?>/safetrips/">Refresh Culture</a></h1>
+                        <p>Team-created mobile app serving alternative social options to millenials who choose not to drink alcohol</p>
+                        <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
+                    </div>
+                </article> -->
+                
+                <!-- <article id="fdo">
                     <div class="image">
                         <img src="images/fdo-chart.png">
                     </div>
@@ -87,7 +127,7 @@
                         <p>Refreshing the user experience of large nonprofit prospecting application by applying organizational-wide branding and re-imagining the underperforming features of the application.</p>
                         <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing, Project Management</p>
                     </div>
-                </article>
+                </article> -->
                 <!-- <article id="doi">
                     <div class="image">
                         <img src="images/doi.png">
@@ -98,18 +138,8 @@
                         <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
                     </div>
                 </article> -->
-                <article id="native">
-                    <div class="image">
-                        <img src="images/native-communities.png">
-                    </div>
-                    <div class="content">
-                        <p class="type">Website Design and Development</p>
-                        <h1><a href="#">Investing in Native Communities</a></h1>
-                        <p>Designing and building responsive web portal showcasing history, resources, news, and philanthropic funding for Native causes, with branding reflecting authentic Native culture.</p>
-                        <p class="tags">UX/UI Design, Interaction Design, Prototyping, Front-end development</p>
-                    </div>
-                </article>
-                <article id="candid-learning">
+                
+                <!-- <article id="candid-learning">
                     <div class="image">
                         <img src="images/candid-learning.png">
                     </div>
@@ -119,23 +149,9 @@
                         <p>Led front-end development on redesign of highly-trafficked nonprofit training and resources hub, hosted on custom Wordpress theme.</p>
                         <p class="tags">Interaction Design, Front-end development, Project Management</p>
                     </div>
-                </article>
-            </div>
-        </section>
-        <!-- <section class="work mobile">
-            <div class="container">
-                <h1>Mobile Prototypes</h1>
-                <article id="safetrips">
-                    <div class="image">
-                        <img src="images/safetrips.jpg">
-                    </div>
-                    <div class="content">
-                        <h1><a href="../<?php echo $homelink; ?>/safetrips/index.html">SafeTrips</a></h1>
-                        <p>App prototype providing data-driven safety ratings of travel services based on verified safety protocols and traveler experiences</p>
-                        <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
-                    </div>
-                </article>
-                <article id="recycling">
+                </article> -->
+
+                <!-- <article id="recycling">
                     <div class="image">
                         <img src="images/recycling.jpg">
                     </div>
@@ -144,9 +160,19 @@
                         <p>Using camera and AI technology to categorize household items, users would be able to easily learn how to discard items in their location with the least negative impact to the environment.</p>
                         <p class="tags">UX Research, UX/UI Design, Prototyping, Usability Testing</p>
                     </div>
-                </article>
+                </article> -->
+                
+            
+            <aside>
+                <div class="container text-center">
+                    <h2>More coming soon!</h2>
+                    <h3>P.S. The site you are looking at right now? Also designed and coded by me!</h3>
+                </div>
+            </aside>
             </div>
-        </section> -->
+        </section>
+        
+        
     </main>
     <?php include('inc/footer.php');?>
 </body>

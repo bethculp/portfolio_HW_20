@@ -546,6 +546,11 @@ footer {
           line-height: 2.5rem; } }
       footer ul li + li {
         margin-left: 1.5rem; }
+  footer .credits p {
+    font-size: .825rem;
+    line-height: 1rem; }
+    footer .credits p + p {
+      margin-top: 0; }
 
 section .row + .row {
   margin-top: 3rem; }

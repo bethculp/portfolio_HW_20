@@ -23,8 +23,8 @@ $homelink = 'http://192.168.64.2/portfolio_HW_20';
                         <div class="navbar-nav align-items-center">
                             <a class="nav-link" href="<?php echo $homelink; ?>/#work">Work</a>
                             <a class="nav-link" href="<?php echo $homelink; ?>/about">About</a>
-                            <a class="nav-link" href="#">Resume</a>
-                            <a class="nav-link" href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a class="nav-link" href="<?php echo $homelink; ?>/pdf/Beth-Culp_Resume.pdf">Resume</a>
+                            <a class="nav-link" href="https://www.linkedin.com/in/bethculp/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         </div>
                 
                     </div>
